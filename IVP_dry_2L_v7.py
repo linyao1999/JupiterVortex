@@ -152,9 +152,9 @@ try:
     logger.info('Starting main loop')
     while solver.proceed:
         timestep=1e-3
-        timestep = CFL.compute_timestep()
-        # solver.step(timestep)
-        if (solver.iteration-1) % 10 == 0:
+        # timestep = CFL.compute_timestep()
+        solver.step(timestep)
+        if (solver.iteration-1) % 1 == 0:
             # max_u = np.sqrt(flow.max('u2'))
             max_q1 = np.sqrt(flow.max('q1'))
             logger.info("Iteration=%i, Time=%e, dt=%e, max(q1)=%e" %(solver.iteration, solver.sim_time, timestep, max_q1))
