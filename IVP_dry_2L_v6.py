@@ -44,7 +44,7 @@ Nphi, Nr = 32, 64
 # Ekman = 1 / 2 / 20**2
 # Ro = 40
 dealias = 3/2
-stop_sim_time = 0.4
+stop_sim_time = 0.6
 # timestepper = d3.SBDF2
 timestepper = d3.RK443
 # timestep = 1e-3
@@ -95,13 +95,13 @@ problem.add_equation("dt(q1) " \
                         "+ (psi2u(psi1)) @ grad(Q1) " \
                         "+ psi2u(psi1_0) @ grad(q1)" \
                         "- nu * lap(q1)" \
-                        "+ lift(tau2,-2) = " \
+                        "+ lift(tau2,-1) = " \
                         "- psi2u(psi1) @ grad(q1)")
 problem.add_equation("dt(q2) " \
                         "+ (psi2u(psi2)) @ grad(Q2) " \
                         "+ psi2u(psi2_0) @ grad(q2)" \
                         "- nu * lap(q2)" \
-                        "+ lift(tau4,-2) = " \
+                        "+ lift(tau4,-1) = " \
                         "- psi2u(psi2) @ grad(q2)")
 problem.add_equation("psi1(r=a_norm) = 0") # 7 is a/L
 problem.add_equation("psi2(r=a_norm) = 0")
