@@ -29,12 +29,12 @@ logger = logging.getLogger(__name__)
 
 # Parameters
 # Physical paramters 
-F1 = 5.18  # L**2/Ld1**2
-F2 = 5.18
+F1 = 51.8  # L**2/Ld1**2
+F2 = 51.8
 a = 6.99e7
 T = 9.925*3600
 L = 1e7
-U = 100
+U = 500
 gamma = 4 * np.pi / a / a / T * (L**3) / U
 # gamma = 0.7198 # 2 omega / a**2 * L**3 / U
 a_norm = 3.5
@@ -44,14 +44,14 @@ Nphi, Nr = 32, 64
 # Ekman = 1 / 2 / 20**2
 # Ro = 40
 dealias = 3/2
-stop_sim_time = 0.6
+stop_sim_time = 10
 # timestepper = d3.SBDF2
 timestepper = d3.RK443
 # timestep = 1e-3
 timestep =1e-3
-max_timestep = 1e-2
+max_timestep = 1e-3
 dtype = np.float64
-nu = 1e-3 # 1e-11
+nu = 1e-11
 
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
@@ -116,20 +116,20 @@ solver.stop_sim_time = stop_sim_time
 
 # Initial conditions
 psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-psi1['g'] *= 1e-6
+psi1['g'] *= 1e-4
 # psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-psi2['g'] *= 1e-6
+psi2['g'] *= 1e-4
 # psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 q1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-q1['g'] *= 1e-6
+q1['g'] *= 1e-4
 # q1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 q2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-q2['g'] *= 1e-6
+q2['g'] *= 1e-4
 # q2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=timestep*10, max_writes=100, mode='overwrite')
+snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=timestep*50, max_writes=100, mode='overwrite')
 snapshots.add_task(psi1, scales=(32, 4), name='psi1')
 snapshots.add_task(psi2, scales=(32, 4), name='psi2')
 snapshots.add_task(q1, scales=(32, 4), name='q1')
@@ -138,7 +138,7 @@ snapshots.add_task(q2, scales=(32, 4), name='q2')
 # scalars.add_task(d3.integ(0.5*u@u), name='KE')
 
 # CFL
-CFL = d3.CFL(solver, initial_dt=max_timestep*1e-3, cadence=10, safety=0.5, threshold=0.05,
+CFL = d3.CFL(solver, initial_dt=max_timestep*1e-3, cadence=5, safety=0.1, threshold=0.02,
              max_change=1.5, min_change=0.5, max_dt=max_timestep)
 CFL.add_velocity(psi2u(psi1))
 
@@ -151,8 +151,9 @@ flow.add_property(q1, name='q1')  # could be a vector; to be check
 try:
     logger.info('Starting main loop')
     while solver.proceed:
+        timestep=1e-3
         timestep = CFL.compute_timestep()
-        solver.step(timestep)
+        # solver.step(timestep)
         if (solver.iteration-1) % 10 == 0:
             # max_u = np.sqrt(flow.max('u2'))
             max_q1 = np.sqrt(flow.max('q1'))
