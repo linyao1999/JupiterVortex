@@ -20,7 +20,6 @@ To run and plot using e.g. 4 processes:
     $ mpiexec -n 4 python3 plot_disk.py snapshots/*.h5
     $ python3 plot_scalars.py scalars/*.h5
 """
-# salloc --nodes 1 --qos interactive --time 02:00:00 --constraint cpu --account=m3312
 
 import numpy as np
 import dedalus.public as d3
@@ -30,8 +29,8 @@ logger = logging.getLogger(__name__)
 
 # Parameters
 # Physical paramters 
-F1 = 5.18  # L**2/Ld1**2
-F2 = 5.18
+F1 = 51.8  # L**2/Ld1**2
+F2 = 51.8
 a = 6.99e7
 T = 9.925*3600
 L = 1e7
@@ -45,14 +44,14 @@ Nphi, Nr = 32, 64
 # Ekman = 1 / 2 / 20**2
 # Ro = 40
 dealias = 3/2
-stop_sim_time = 10
+stop_sim_time = 2
 # timestepper = d3.SBDF2
 timestepper = d3.RK443
 # timestep = 1e-3
-timestep =1e-3
-max_timestep = 1e-3
+timestep =1e-4
+max_timestep = 1e-4
 dtype = np.float64
-nu = 1e-11 # 1e-11
+nu = 1e-11
 
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
@@ -118,23 +117,23 @@ solver.stop_sim_time = stop_sim_time
 # Initial conditions
 psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 psi1['g'] *= 1e-6
-# psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 psi2['g'] *= 1e-6
-# psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 q1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 q1['g'] *= 1e-6
-# q1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+q1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 q2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 q2['g'] *= 1e-6
-# q2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+q2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=timestep*10, max_writes=100, mode='overwrite')
-snapshots.add_task(psi1, scales=(16, 1), name='psi1')
-snapshots.add_task(psi2, scales=(16, 1), name='psi2')
-snapshots.add_task(q1, scales=(16, 1), name='q1')
-snapshots.add_task(q2, scales=(16, 1), name='q2')
+snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=timestep*50, max_writes=100, mode='overwrite')
+snapshots.add_task(psi1, scales=(32, 4), name='psi1')
+snapshots.add_task(psi2, scales=(32, 4), name='psi2')
+snapshots.add_task(q1, scales=(32, 4), name='q1')
+snapshots.add_task(q2, scales=(32, 4), name='q2')
 # scalars = solver.evaluator.add_file_handler('scalars', sim_dt=0.01)
 # scalars.add_task(d3.integ(0.5*u@u), name='KE')
 
@@ -153,7 +152,7 @@ try:
     logger.info('Starting main loop')
     while solver.proceed:
         # timestep=1e-3
-        #timestep = CFL.compute_timestep()
+        # timestep = CFL.compute_timestep()
         solver.step(timestep)
         if (solver.iteration-1) % 10 == 0:
             # max_u = np.sqrt(flow.max('u2'))
