@@ -109,7 +109,6 @@ problem.add_equation("psi2(r=a_norm) = 0")
 problem.add_equation("q1(r=a_norm) = 0") # double check? it is the same as lap(psi1)(r=a_norm) = 0
 problem.add_equation("q2(r=a_norm) = 0")
 
-
 # Solver
 solver = problem.build_solver(timestepper)
 solver.print_subproblem_ranks(solver.subproblems, timestep)
