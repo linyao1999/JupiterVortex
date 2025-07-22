@@ -100,11 +100,11 @@ problem.add_equation("dt(lap(psi2) + F2 * (psi1 - psi2)) " \
                         "+ psi2u(psi2_0) @ grad(lap(psi2) + F2 * (psi1 - psi2))" \
                         "- nu * lap(lap(psi2) + F2 * (psi1 - psi2))" \
                         "+ lift(tau_psi3, -1) + lift(tau_psi4,-2)= 0")
-problem.add_equation("psi1(r=a_norm) = 0") # 7 is a/L
-problem.add_equation("psi2(r=a_norm) = 0")
-problem.add_equation("lap(psi1- F1 * (psi1 - psi2))(r=a_norm) = 0") # 7 is a/L
-problem.add_equation("lap(psi2+ F2 * (psi1 - psi2))(r=a_norm) = 0")
 
+problem.add_equation("lap(psi1)(r=a_norm) = 0") # 7 is a/L
+problem.add_equation("lap(psi2)(r=a_norm) = 0")
+problem.add_equation("(psi1 - psi2)(r=a_norm) = 0") # 7 is a/L
+problem.add_equation("psi1(r=a_norm) = 0")
 
 
 
@@ -116,10 +116,10 @@ solver.stop_sim_time = stop_sim_time
 # Initial conditions
 psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 psi1['g'] *= 1e-6
-# psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 psi2['g'] *= 1e-6
-# # psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+# psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 # q1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
 # q1['g'] *= 1e-6
 # # q1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
