@@ -2,8 +2,6 @@ import numpy as np
 import dedalus.public as d3
 import matplotlib.pyplot as plt
 import logging
-import os 
-import h5py
 logger = logging.getLogger(__name__)
 
 # Parameters
@@ -18,9 +16,6 @@ gamma = 4 * np.pi / T / a / a * (L**3) / U
 # gamma = 0.7198 # 2 omega / a**2 * L**3 / U
 a_norm = a / L / 2
 
-evp_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EVP/'
-os.makedirs(evp_dir, exist_ok=True)
-
 # numerical parameters
 m = 10
 Nphi = 2 * m + 2
@@ -30,15 +25,20 @@ dtype = np.complex128
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
 dist = d3.Distributor(coords, dtype=dtype)
-disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=3.5, dtype=dtype)
+disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=a_norm, dtype=dtype)
 phi, r = dist.local_grids(disk)
 
 # Fields
 s = dist.Field(name='s')
 psi1 = dist.Field(name='psi1', bases=disk)
 psi2 = dist.Field(name='psi2', bases=disk)
+q1 = dist.Field(name='q1', bases=disk)
+q2 = dist.Field(name='q2', bases=disk)
 tau_psi1 = dist.Field(name='tau_psi1', bases=disk.edge)
 tau_psi2 = dist.Field(name='tau_psi2', bases=disk.edge)
+tau_psi3 = dist.Field(name='tau_psi3', bases=disk.edge)
+tau_psi4 = dist.Field(name='tau_psi4', bases=disk.edge)
+taus = [tau_psi1, tau_psi2, tau_psi3, tau_psi4]
 
 # Substitutions
 dt = lambda A: s*A
@@ -49,9 +49,9 @@ q1 = d3.lap(psi1) - F1 * (psi1 - psi2)
 q2 = d3.lap(psi2) + F2 * (psi1 - psi2)
 
 # Background 
-r2_field = dist.Field(bases=disk.radial_basis)
-r2_field['g'] = r**2  # radial coordinate
-psi1_0 = 0.5 * (r2_field)
+r_field = dist.Field(bases=disk.radial_basis)
+r_field['g'] = r  # radial coordinate
+psi1_0 = 0.5 * (r_field**2)
 psi2_0 = - 0.5 * (r_field**2)
 Q1 = d3.Laplacian(psi1_0) - F1 * (psi1_0 - psi2_0) - 0.5 * gamma * (r_field**2)
 Q2 = d3.Laplacian(psi2_0) + F2 * (psi1_0 - psi2_0) - 0.5 * gamma * (r_field**2)
@@ -72,7 +72,7 @@ problem.add_equation("psi2(r=a_norm) = 0")
 # Solver
 solver = problem.build_solver()
 
-for kphi in range(1,7):
+for kphi in range(1,8):
     sp = solver.subproblems_by_group[(kphi, None)]
     solver.solve_dense(sp)
     evals = solver.eigenvalues[np.isfinite(solver.eigenvalues)]
@@ -102,14 +102,7 @@ for kphi in range(1,7):
     fig.tight_layout()
     fig.savefig(f'./plots/EVP_dry_phi_m{kphi}_F{F1}_U{U}.png', dpi=200)
 
-    hfile = h5py.File(f'{evp_dir}EVP_dry_phi_m{kphi}_F{F1}_U{U}.h5', 'w')
-    tasks = hfile.create_group('tasks')
-    tasks.create_dataset('psi1', data=psi1['g'].real)
-    tasks.create_dataset('psi2', data=psi2['g'].real)
-    tasks.create_dataset('x', data=x)
-    tasks.create_dataset('y', data=y)
-    tasks.create_dataset('phi', data=phi[:])
-    tasks.create_dataset('r', data=r[:])    
+
     # # plot PV
     # scales = (32, 4)
     # q1.change_scales(scales)
