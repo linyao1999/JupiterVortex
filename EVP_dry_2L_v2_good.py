@@ -72,7 +72,7 @@ problem.add_equation("psi2(r=a_norm) = 0")
 # Solver
 solver = problem.build_solver()
 
-for kphi in range(1,15):
+for kphi in range(1,11):
     sp = solver.subproblems_by_group[(kphi, None)]
     solver.solve_dense(sp)
     evals = solver.eigenvalues[np.isfinite(solver.eigenvalues)]
