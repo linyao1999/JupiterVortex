@@ -49,12 +49,12 @@ q1 = d3.lap(psi1) - F1 * (psi1 - psi2)
 q2 = d3.lap(psi2) + F2 * (psi1 - psi2)
 
 # Background 
-r2_field = dist.Field(bases=disk.radial_basis)
-r2_field['g'] = r**2  # radial coordinate
-psi1_0 = 0.5 * (r2_field)
-psi2_0 = - 0.5 * (r_field**2)
-Q1 = d3.Laplacian(psi1_0) - F1 * (psi1_0 - psi2_0) - 0.5 * gamma * (r_field**2)
-Q2 = d3.Laplacian(psi2_0) + F2 * (psi1_0 - psi2_0) - 0.5 * gamma * (r_field**2)
+r_field = dist.Field(bases=disk.radial_basis)
+r_field['g'] = r**2  # radial coordinate
+psi1_0 = 0.5 * (r_field)
+psi2_0 = - 0.5 * (r_field)
+Q1 = d3.Laplacian(psi1_0) - F1 * (psi1_0 - psi2_0) - 0.5 * gamma * (r_field)
+Q2 = d3.Laplacian(psi2_0) + F2 * (psi1_0 - psi2_0) - 0.5 * gamma * (r_field)
 
 # Problem
 problem = d3.EVP([psi1, psi2, tau_psi1, tau_psi2], eigenvalue=s, namespace=locals())
@@ -72,7 +72,7 @@ problem.add_equation("psi2(r=a_norm) = 0")
 # Solver
 solver = problem.build_solver()
 
-for kphi in range(1,7):
+for kphi in range(1,15):
     sp = solver.subproblems_by_group[(kphi, None)]
     solver.solve_dense(sp)
     evals = solver.eigenvalues[np.isfinite(solver.eigenvalues)]
