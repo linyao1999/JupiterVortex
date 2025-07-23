@@ -2,7 +2,6 @@ import numpy as np
 import dedalus.public as d3
 import matplotlib.pyplot as plt
 import logging
-import os 
 import h5py
 logger = logging.getLogger(__name__)
 
@@ -18,9 +17,6 @@ gamma = 4 * np.pi / T / a / a * (L**3) / U
 # gamma = 0.7198 # 2 omega / a**2 * L**3 / U
 a_norm = a / L / 2
 
-evp_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EVP/'
-os.makedirs(evp_dir, exist_ok=True)
-
 # numerical parameters
 m = 10
 Nphi = 2 * m + 2
@@ -30,7 +26,7 @@ dtype = np.complex128
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
 dist = d3.Distributor(coords, dtype=dtype)
-disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=3.5, dtype=dtype)
+disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=a_norm, dtype=dtype)
 phi, r = dist.local_grids(disk)
 
 # Fields
@@ -80,6 +76,10 @@ for kphi in range(1,7):
     print(f"Slowest decaying mode: λ = {evals[0]}")
     solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[0])), sp.subsystems[0])
 
+    hfile = h5py.File(f'EVP_dry_phi_m{kphi}.h5','w')
+    tasks = hfile.create_group('tasks')
+    tasks.create_dataset('psi1', data=psi1['g'].real)
+
     # # Plot eigenfunction
     scales = (32, 4)
     psi1.change_scales(scales)
@@ -100,16 +100,10 @@ for kphi in range(1,7):
         axi.set_aspect('equal')
         axi.set_axis_off()
     fig.tight_layout()
-    fig.savefig(f'./plots/EVP_dry_phi_m{kphi}_F{F1}_U{U}.png', dpi=200)
+    fig.savefig(f'./plots/EVP_dry_phi_m{kphi}.png', dpi=200)
 
-    hfile = h5py.File(f'{evp_dir}EVP_dry_phi_m{kphi}_F{F1}_U{U}.h5', 'w')
-    tasks = hfile.create_group('tasks')
-    tasks.create_dataset('psi1', data=psi1['g'].real)
-    tasks.create_dataset('psi2', data=psi2['g'].real)
-    tasks.create_dataset('x', data=x)
-    tasks.create_dataset('y', data=y)
-    tasks.create_dataset('phi', data=phi[:])
-    tasks.create_dataset('r', data=r[:])    
+
+
     # # plot PV
     # scales = (32, 4)
     # q1.change_scales(scales)

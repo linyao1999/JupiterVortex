@@ -5,8 +5,6 @@ import logging
 import os 
 logger = logging.getLogger(__name__)
 
-# mpirun -n 6 python3 v5
-
 # Parameters
 # Physical paramters 
 F1 = 51.8  # L**2/Ld1**2
@@ -14,7 +12,7 @@ F2 = 51.8
 a = 6.99e7
 T = 9.925*3600
 L = 1e7
-U = 100
+U = 10
 gamma = 4 * np.pi / a / a / T * (L**3) / U  # gamma = 0.7198 # 2 omega / a**2 * L**3 / U
 a_norm = a / L / 2
 
@@ -25,15 +23,15 @@ snapshots_file = snapshots_dir + snapshots_name
 
 os.makedirs(snapshots_dir, exist_ok=True)
 
+
 Nphi, Nr = 32, 64
 dealias = 3/2
 stop_sim_time = 10
 timestepper = d3.RK443
-timestep =1e-3
-# max_timestep = 1e-1
+timestep =1e-4
+max_timestep = 1e-4
 dtype = np.float64
-nu = 1e-11
-initv = 1e-6
+nu = 1e-11 
 
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
@@ -47,27 +45,18 @@ psi2 = dist.Field(name='psi2', bases=disk)
 
 tau1 = dist.Field(name='tau1', bases=edge)
 tau2 = dist.Field(name='tau2', bases=edge)
-# tau3 = dist.Field(name='tau3', bases=edge)
-# tau4 = dist.Field(name='tau4', bases=edge)
-# taup = dist.Field(name='taup')
+tau3 = dist.Field(name='tau3', bases=edge)
+tau4 = dist.Field(name='tau4', bases=edge)
+taup = dist.Field(name='taup')
 # taup2 = dist.Field(name='taup2')
-# taus = [tau1, tau2, tau3, tau4, taup]
-# taus = [tau1, tau2, taup]
-taus = [tau1, tau2]
-# taus = [tau1, tau2, tau3, tau4]
+taus = [tau1, tau2, tau3, tau4, taup]
 
 # Substitutions
 phi, r = dist.local_grids(disk)
-# lift = lambda A,n: d3.Lift(A, disk, n)
-lift_basis = disk.derivative_basis(2)
-lift = lambda A,n: d3.Lift(A, lift_basis, n)
+lift = lambda A,n: d3.Lift(A, disk, n)
 # psi2u = lambda A: -d3.Skew(d3.Gradient(A))
 r_field = dist.Field(bases=disk.radial_basis)
 r_field['g'] = r  # radial coordinate
-q1 = d3.lap(psi1) - F1 * (psi1 - psi2)
-q2 = d3.lap(psi2) + F2 * (psi1 - psi2)
-u1 = -d3.Skew(d3.Gradient(psi1))  # (d/dr, -1/r d/dphi)
-u2 = -d3.Skew(d3.Gradient(psi2))
 
 # Background
 psi1_0 = 0.5 * (r_field**2)
@@ -78,26 +67,33 @@ U1 = -d3.Skew(d3.Gradient(psi1_0))  # (d/dr, -1/r d/dphi)
 U2 = -d3.Skew(d3.Gradient(psi2_0))
 t = dist.Field()
 
+# Problem 
+q1 = d3.lap(psi1) - F1 * (psi1 - psi2) + taup 
+q2 = d3.lap(psi2) + F2 * (psi1 - psi2) + taup 
+u1 = -d3.Skew(d3.Gradient(psi1))
+u2 = -d3.Skew(d3.Gradient(psi2))
+
 problem = d3.IVP([psi1, psi2] + taus, time=t, namespace=locals())
 problem.add_equation(" dt(q1) " \
                         "+ U1 @ grad(q1)" \
                         "+ u1 @ grad(Q1)" \
-                        "+ lift(tau1, -1)" \
-                        # "+ taup" \
-                        "= 0" )
+                        "- nu * lap(q1)" \
+                        "+ lift(tau1, -1) + lift(tau3, -2)" \
+                        "=" \
+                        "- u1 @ grad(q1)")
 problem.add_equation(" dt(q2) " \
                         "+ U2 @ grad(q2)" \
                         "+ u2 @ grad(Q2)" \
-                        "+ lift(tau2, -1)" \
-                        # "+ taup" \
-                        "= 0" )
+                        "- nu * lap(q2)" \
+                        "+ lift(tau2, -1) + lift(tau4, -2)" \
+                        "=" \
+                        "- u2 @ grad(q2)")
 problem.add_equation("psi1(r=a_norm) = 0") # 7 is a/L
 problem.add_equation("psi2(r=a_norm) = 0")
-# problem.add_equation("lap(psi1)(r=a_norm) = 0") # 7 is a/L
-# problem.add_equation("lap(psi2)(r=a_norm) = 0")
-# problem.add_equation("q1(r=a_norm) = 0") # 7 is a/L
-# problem.add_equation("q2(r=a_norm) = 0")
-# problem.add_equation("integ(psi1) = 0")
+problem.add_equation("lap(psi1)(r=a_norm) = 0") # 7 is a/L
+problem.add_equation("lap(psi2)(r=a_norm) = 0")
+problem.add_equation("integ(psi1) = 0")
+
 
 
 # Solver
@@ -107,21 +103,26 @@ solver.stop_sim_time = stop_sim_time
 
 # Initial conditions
 psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-psi1['g'] *= initv
+psi1['g'] *= 1e-6
 psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
-
 psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-psi2['g'] *= initv
+psi2['g'] *= 1e-6
 psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
 
 # Analysis
 snapshots = solver.evaluator.add_file_handler(snapshots_file, sim_dt=0.1, max_writes=500, mode='overwrite')
 snapshots.add_task(psi1, scales=(16, 1), name='psi1')
-# snapshots.add_task(tau1, scales=(16, 1), name='tau1')
+snapshots.add_task(psi2, scales=(16, 1), name='psi2')
 
+
+# # CFL
+# CFL = d3.CFL(solver, initial_dt=max_timestep*1e-3, cadence=5, safety=0.1, threshold=0.02,
+#              max_change=1.5, min_change=0.5, max_dt=max_timestep)
+# CFL.add_velocity(u1)
 
 # Flow properties
 flow = d3.GlobalFlowProperty(solver, cadence=1)
+# flow.add_property(u@u, name='u2')
 flow.add_property(psi1, name='psi1')  # could be a vector; to be check 
 
 # Main loop
@@ -131,7 +132,7 @@ try:
         # timestep=1e-3
         #timestep = CFL.compute_timestep()
         solver.step(timestep)
-        if (solver.iteration-1) % 100 == 0:
+        if (solver.iteration-1) % 500 == 0:
             # max_u = np.sqrt(flow.max('u2'))
             max_psi1 = np.sqrt(flow.max('psi1'))
             logger.info("Iteration=%i, Time=%e, dt=%e, max(psi1)=%e" %(solver.iteration, solver.sim_time, timestep, max_psi1))
@@ -140,5 +141,3 @@ except:
     raise
 finally:
     solver.log_stats()
-
-
