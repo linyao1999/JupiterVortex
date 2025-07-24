@@ -3,6 +3,10 @@ import dedalus.public as d3
 import h5py 
 import matplotlib.pyplot as plt
 import logging
+import os 
+logger = logging.getLogger(__name__)
+
+# mpirun -n 6 python3 
 
 # --------- CHOOSE THE PROBLEM -----------
 prob_class = 'EVP'
@@ -28,9 +32,21 @@ Gamma = gamma * (L**3) / U
 # ------------- Numerical parameters --------------------
 Nphi = 64
 Nr = 128
-dtype = np.complex128
-max_kphi = 10
 output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+os.makedirs(output_dir, exist_ok=True)
+
+if prob_class == 'EVP':
+    dtype = np.complex128
+    max_kphi = 10
+else:
+    dtype = np.float64
+    timestep = 1e-3
+    timestepper = d3.RK443
+    stop_sim_time = 10
+    initv = 1e-2
+    snapshots_name = f'snapshots_F51_U_{U}_linear_noNu'
+    snapshots_file = output_dir + snapshots_name
+    
 
 # --------------- Bases ------------------------
 coords = d3.PolarCoordinates('phi', 'r')
@@ -46,12 +62,13 @@ tau1 = dist.Field(name='tau1', bases=disk.edge)
 tau2 = dist.Field(name='tau2', bases=disk.edge)
 
 # ----------------- Substitutions ----------------------
-dt = lambda A: s*A
-# psi2u = lambda A: d3.Skew(d3.Gradient(A))
+if prob_class == 'EVP':
+    dt = lambda A: s*A
+
 lift_basis = disk.derivative_basis(2)
 lift = lambda A: d3.Lift(A, lift_basis, -1)
-q1 = - d3.lap(psi1) - F1 * (psi1 - psi2)
-q2 = - d3.lap(psi2) + F2 * (psi1 - psi2)
+q1 = d3.lap(psi1) - F1 * (psi1 - psi2)
+q2 = d3.lap(psi2) + F2 * (psi1 - psi2)
 u1 = - d3.Skew(d3.Gradient(psi1))
 u2 = - d3.Skew(d3.Gradient(psi2))
 
@@ -62,23 +79,25 @@ Psi1 = r2
 Psi2 = - r2
 U1 = - d3.Skew(d3.Gradient(Psi1))
 U2 = - d3.Skew(d3.Gradient(Psi2))
-Q1 = - d3.lap(Psi1) - F1 * (Psi1 - Psi2) - Gamma * r2
-Q2 = - d3.lap(Psi2) + F2 * (Psi1 - Psi2) - Gamma * r2
+Q1 = d3.lap(Psi1) - F1 * (Psi1 - Psi2) - Gamma * r2
+Q2 = d3.lap(Psi2) + F2 * (Psi1 - Psi2) - Gamma * r2
 
 # ------------------ Problem ------------------------------
 if prob_class == 'EVP':
-    print(prob_class)
     problem = d3.EVP([psi1, psi2, tau1, tau2], eigenvalue=s, namespace=locals())
-    problem.add_equation(" dt(q1) + u1 @ grad(Q1) + U1 @ grad(q1) + lift(tau1) = 0 ")
-    problem.add_equation(" dt(q2) + u2 @ grad(Q2) + U2 @ grad(q2) + lift(tau2) = 0 ")
-    problem.add_equation("psi1(r=a_norm) = 0")
-    problem.add_equation("psi2(r=a_norm) = 0")
 else:
-    print(prob_class)
+    problem = d3.IVP([psi1, psi2, tau1, tau2], namespace=locals())
+    
+problem.add_equation(" dt(q1) + u1 @ grad(Q1) + U1 @ grad(q1) + lift(tau1) = 0 ")
+problem.add_equation(" dt(q2) + u2 @ grad(Q2) + U2 @ grad(q2) + lift(tau2) = 0 ")
+problem.add_equation("psi1(r=a_norm) = 0")
+problem.add_equation("psi2(r=a_norm) = 0")
 
-solver = problem.build_solver()
+
+
 
 if prob_class == 'EVP':
+    solver = problem.build_solver()
     for kphi in range(1, max_kphi+1):
         sp = solver.subproblems_by_group[(kphi, None)]
         solver.solve_dense(sp)
@@ -126,5 +145,46 @@ if prob_class == 'EVP':
     tasks.create_dataset('Q2', data=Q2['g'].real)
     tasks.create_dataset('phi', data=phi)
     tasks.create_dataset('r', data=r)
+
+else:
+    solver = problem.build_solver(timestepper)
+    solver.print_subproblem_ranks(solver.subproblems, timestep)
+    solver.stop_sim_time = stop_sim_time
+
+    # Initial conditions
+    psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
+    psi1['g'] *= initv
+    psi1.low_pass_filter(scales=0.9) # Keep only lower fourth of the modes
+    
+    psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
+    psi2['g'] *= initv
+    psi2.low_pass_filter(scales=0.9) # Keep only lower fourth of the modes
+    
+    # Analysis
+    snapshots = solver.evaluator.add_file_handler(snapshots_file, sim_dt=0.1, max_writes=500, mode='overwrite')
+    snapshots.add_task(psi1, scales=(16, 1), name='psi1')
+    # snapshots.add_task(tau1, scales=(16, 1), name='tau1')
+
+
+    # Flow properties
+    flow = d3.GlobalFlowProperty(solver, cadence=1)
+    flow.add_property((u1)**2, name='ke')  # could be a vector; to be check 
+    
+    # Main loop
+    try:
+        logger.info('Starting main loop')
+        while solver.proceed:
+            # timestep=1e-3
+            #timestep = CFL.compute_timestep()
+            solver.step(timestep)
+            if (solver.iteration-1) % 100 == 0:
+                # max_u = np.sqrt(flow.max('u2'))
+                max_psi1 = np.sqrt(flow.max('ke'))
+                logger.info("Iteration=%i, Time=%e, dt=%e, max(psi1)=%e" %(solver.iteration, solver.sim_time, timestep, max_psi1))
+    except:
+        logger.error('Exception raised, triggering end of main loop.')
+        raise
+    finally:
+        solver.log_stats()
 
 
