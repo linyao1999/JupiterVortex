@@ -25,7 +25,7 @@ phi, r = dist.local_grids(disk)
 
 r3 = dist.Field(bases=disk)
 # r3 = dist.Field(bases=disk.radial_basis)
-r3['g'] = np.cos(6*phi) + r**2  # radial coordinate
+r3['g'] = r**4  # radial coordinate
 Psi1 = r3
 Psi2 = - r3
 gradPsi1 = d3.Gradient(Psi1)
