@@ -38,7 +38,7 @@ tau_psi2 = dist.Field(name='tau_psi2', bases=disk.edge)
 
 # Substitutions
 dt = lambda A: s*A
-psi2u = lambda A: -d3.Skew(d3.Gradient(A))
+psi2u = lambda A: d3.Skew(d3.Gradient(A))
 lift_basis = disk.derivative_basis(2)
 lift = lambda A: d3.Lift(A, lift_basis, -1)
 q1 = d3.lap(psi1) - F1 * (psi1 - psi2)
@@ -68,7 +68,7 @@ problem.add_equation("psi2(r=a_norm) = 0")
 # Solver
 solver = problem.build_solver()
 
-for kphi in range(1,7):
+for kphi in range(1,10):
     sp = solver.subproblems_by_group[(kphi, None)]
     solver.solve_dense(sp)
     evals = solver.eigenvalues[np.isfinite(solver.eigenvalues)]
@@ -76,9 +76,9 @@ for kphi in range(1,7):
     print(f"Slowest decaying mode: λ = {evals[0]}")
     solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[0])), sp.subsystems[0])
 
-    hfile = h5py.File(f'EVP_dry_phi_m{kphi}.h5','w')
-    tasks = hfile.create_group('tasks')
-    tasks.create_dataset('psi1', data=psi1['g'].real)
+    # hfile = h5py.File(f'EVP_dry_phi_m{kphi}.h5','w')
+    # tasks = hfile.create_group('tasks')
+    # tasks.create_dataset('psi1', data=psi1['g'].real)
 
     # # Plot eigenfunction
     scales = (32, 4)

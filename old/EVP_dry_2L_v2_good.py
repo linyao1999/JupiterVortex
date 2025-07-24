@@ -30,7 +30,7 @@ dtype = np.complex128
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
 dist = d3.Distributor(coords, dtype=dtype)
-disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=3.5, dtype=dtype)
+disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=a_norm, dtype=dtype)
 phi, r = dist.local_grids(disk)
 
 # Fields
