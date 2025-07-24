@@ -9,8 +9,8 @@ logger = logging.getLogger(__name__)
 # mpirun -n 6 python3 
 
 # --------- CHOOSE THE PROBLEM -----------
-prob_class = 'EVP'
-# prob_class = 'IVP'
+# prob_class = 'EVP'
+prob_class = 'IVP'
 
 # ----------- Physical parameters -----------------
 # ======= fixed ==========
