@@ -11,6 +11,7 @@ prob_class = 'IVP'
 output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
 snapshots_name = f'snapshots_F{int(np.floor(F1))}_U_{U}_linear_noNu'
 snapshots_file = output_dir + snapshots_name + '/' + snapshots_name
+snapshots_file = '/home/linyao/fs06/GFD_Polar_vortex/ddloutput/IVP/snapshots_F51_U_100_linear_noNu_initEVP/snapshots_F51_U_100_linear_noNu_initEVP'
 
 with h5py.File(f'{snapshots_file}_s{s}.h5', "r") as f:
     print("Top-level keys:", list(f.keys()))        # likely includes 'scales' and 'tasks'
@@ -36,7 +37,7 @@ import matplotlib.animation as animation
 from matplotlib.animation import FFMpegWriter
 
 # Assume psi1.shape = (nt, ny, nx)
-psi1 = psi1[:200,:,:]
+# psi1 = psi1[:-1,:,:]
 nt = psi1.shape[0]
 
 fig = plt.figure(figsize=(7, 5))

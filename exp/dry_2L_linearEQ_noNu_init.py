@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 # prob_class = 'EVP'
 prob_class = 'IVP'
 restart = False 
-init_pattern = 'EVP' # 'RDM': random; 'EVP': pattern that has the max growth rate
+init_pattern = 'RDM' # 'RDM': random; 'EVP': pattern that has the max growth rate
 
 # ----------- Physical parameters -----------------
 # ======= fixed ==========
@@ -43,7 +43,7 @@ elif prob_class == 'IVP':
     dtype = np.float64
     timestep = 1e-3
     timestepper = d3.RK443
-    stop_sim_time = 0.6
+    stop_sim_time = 10
     initv = 1e-4
     if init_pattern == 'EVP':
         kphi_max_growth = 19  # max growth rate pattern
@@ -178,8 +178,8 @@ elif prob_class == 'IVP':
         elif init_pattern == 'EVP':
             # write, initial_timestep = solver.load_state(init_pattern_file)
             with h5py.File(init_pattern_file, 'r') as f:
-                psi1['g'] = f["tasks/psi1"][:].real
-                psi2['g'] = f["tasks/psi2"][:].real
+                psi1.load_from_global_grid_data(f["tasks/psi1"][:].real)
+                psi2.load_from_global_grid_data(f["tasks/psi2"][:].real)
 
         psi1['g'] *= initv        
         psi2['g'] *= initv
