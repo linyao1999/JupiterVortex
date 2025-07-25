@@ -9,8 +9,8 @@ logger = logging.getLogger(__name__)
 # mpirun -n 6 python3 
 
 # --------- CHOOSE THE PROBLEM -----------
-# prob_class = 'EVP'
-prob_class = 'IVP'
+prob_class = 'EVP'
+# prob_class = 'IVP'
 
 # ----------- Physical parameters -----------------
 # ======= fixed ==========
@@ -22,8 +22,7 @@ omega = 2 * np.pi / T  # rotation speed
 gamma = 2 * omega / a / a # dimensional gamma
 a_norm = a / L / 2.0   # dimensionless disk radius
 # ======= defined/changed ==========
-# F1 = 5.18   # L**2/Ld1**2; can vary between 0.1 and 100
-F1 = 51.8   # L**2/Ld1**2; can vary between 0.1 and 100
+F1 = 51.8  # L**2/Ld1**2; can vary between 0.1 and 100
 delta = 1.0 # H2/H1
 F2 = delta**2 * F1 # L**2/Ld1**2;
 U = 100
@@ -51,7 +50,7 @@ else:
 # --------------- Bases ------------------------
 coords = d3.PolarCoordinates('phi', 'r')
 dist = d3.Distributor(coords, dtype=dtype)
-disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=a_norm, dtype=dtype)
+disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=a_norm*2, dtype=dtype)
 phi, r = dist.local_grids(disk)
 
 # --------------- Fields -----------------------
