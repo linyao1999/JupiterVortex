@@ -5,16 +5,14 @@ import matplotlib.pyplot as plt
 import os 
 import logging
 logger = logging.getLogger(__name__)
-loggers = [logging.getLogger(name) for name in logging.root.manager.loggerDict]
-for logger in loggers:
-    logger.setLevel(logging.WARNING)
     
 # mpirun -n 6 python3 
 
 # --------- CHOOSE THE PROBLEM -----------
-prob_class = 'EVP'
-# prob_class = 'IVP'
+# prob_class = 'EVP'
+prob_class = 'IVP'
 restart = False 
+init_pattern = 'EVP' # 'RDM': random; 'EVP': pattern that has the max growth rate
 
 # ----------- Physical parameters -----------------
 # ======= fixed ==========
@@ -34,26 +32,35 @@ Gamma = gamma * (L**3) / U
 
 # ------------- Numerical parameters --------------------
 Nphi = 128
-Nr = 256
+Nr = 128
 output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
 os.makedirs(output_dir, exist_ok=True)
 
 if prob_class == 'EVP':
     dtype = np.complex128
-    max_kphi = 30
+    max_kphi = 30 # int(np.floor(Nphi/2) - 1)  
 elif prob_class == 'IVP':
     dtype = np.float64
     timestep = 1e-3
     timestepper = d3.RK443
-    stop_sim_time = 6
+    stop_sim_time = 0.6
     initv = 1e-4
-    snapshots_name = f'snapshots_F{int(np.floor(F1))}_U_{U}_linear_noNu'
+    if init_pattern == 'EVP':
+        kphi_max_growth = 19  # max growth rate pattern
+        init_pattern_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EVP/'
+        init_pattern_file = f'{init_pattern_dir}EVP_dry_2L_linearEQ_noNu_F{F1}_U{U}_m{kphi_max_growth}.h5'
+    
+    snapshots_name = f'snapshots_F{int(np.floor(F1))}_U_{U}_linear_noNu_init{init_pattern}'
     snapshots_file = output_dir + snapshots_name
 
     checkpoint_path = snapshots_file + '/checkpoints_s1.h5'
     initial_timestep = 1e-3
     file_handler_mode = 'append'
-    
+
+# loggers = [logging.getLogger(name) for name in logging.root.manager.loggerDict]
+# for logger in loggers:
+#     logger.setLevel(logging.WARNING)
+
 
 # --------------- Bases ------------------------
 coords = d3.PolarCoordinates('phi', 'r')
@@ -119,7 +126,9 @@ if prob_class == 'EVP':
             tasks.create_dataset('psi2', data=psi2['g'])
             tasks.create_dataset('phi', data=phi)
             tasks.create_dataset('r', data=r)
-        
+            # file_handler_mode = 'overwrite'
+            # checkpoints = solver.evaluator.add_file_handler(f'{output_dir}{prob_class}_dry_2L_linearEQ_noNu_F{F1}_U{U}_m{kphi}', mode=file_handler_mode)
+            # checkpoints.add_tasks(solver.state)
         # scales = (1,1)
         # psi1.change_scales(scales)
         # psi2.change_scales(scales)
@@ -161,13 +170,19 @@ elif prob_class == 'IVP':
     # Initial conditions
     if not restart:
         file_handler_mode = 'overwrite'
-        psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
-        psi1['g'] *= initv
-        # psi1.low_pass_filter(scales=0.9) # Keep only lower fourth of the modes
-        
-        psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noise
+        if init_pattern == 'RDM':
+            psi1.fill_random('g', seed=42, distribution='standard_normal') # Random noise
+            # psi1.low_pass_filter(scales=0.9) # Keep only lower fourth of the modes
+            psi2.fill_random('g', seed=42, distribution='standard_normal') # Random noi
+            # psi2.low_pass_filter(scales=0.9) # Keep only lower fourth of the modes
+        elif init_pattern == 'EVP':
+            # write, initial_timestep = solver.load_state(init_pattern_file)
+            with h5py.File(init_pattern_file, 'r') as f:
+                psi1['g'] = f["tasks/psi1"][:].real
+                psi2['g'] = f["tasks/psi2"][:].real
+
+        psi1['g'] *= initv        
         psi2['g'] *= initv
-        # psi2.low_pass_filter(scales=0.9) # Keep only lower fourth of the modes
     else:
         write, initial_timestep = solver.load_state(checkpoint_path)
         file_handler_mode = 'append'

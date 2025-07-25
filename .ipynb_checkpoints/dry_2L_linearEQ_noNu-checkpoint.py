@@ -45,7 +45,7 @@ elif prob_class == 'IVP':
     dtype = np.float64
     timestep = 1e-3
     timestepper = d3.RK443
-    stop_sim_time = 50
+    stop_sim_time = 6
     initv = 1e-4
     snapshots_name = f'snapshots_F{int(np.floor(F1))}_U_{U}_linear_noNu'
     snapshots_file = output_dir + snapshots_name

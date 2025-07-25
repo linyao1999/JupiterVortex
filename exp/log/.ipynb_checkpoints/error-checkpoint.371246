@@ -1,0 +1,7 @@
+anaconda3/2023.07(5):ERROR:150: Module 'anaconda3/2023.07' conflicts with the currently loaded module(s) 'anaconda3/2024.06'
+anaconda3/2023.07(5):ERROR:102: Tcl command execution failed: conflict	 anaconda3 
+
+/tmp/slurmd/job371246/slurm_script: line 24: activate: No such file or directory
+Currently Loaded Modulefiles:
+  1) anaconda3/2024.06   2) slurm/20161123
+srun: fatal: SLURM_MEM_PER_CPU, SLURM_MEM_PER_GPU, and SLURM_MEM_PER_NODE are mutually exclusive.

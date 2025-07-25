@@ -1,0 +1,3 @@
+Currently Loaded Modulefiles:
+  1) anaconda3/2023.07
+srun: fatal: SLURM_MEM_PER_CPU, SLURM_MEM_PER_GPU, and SLURM_MEM_PER_NODE are mutually exclusive.

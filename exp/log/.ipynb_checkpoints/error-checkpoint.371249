@@ -1,0 +1,50 @@
+Currently Loaded Modulefiles:
+  1) anaconda3/2023.07
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax
+  File "dry_2L_linearEQ_noNu.py", line 38
+    output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
+                                                                               ^
+SyntaxError: invalid syntax

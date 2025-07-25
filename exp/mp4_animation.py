@@ -8,12 +8,12 @@ import matplotlib.animation as animation
 from matplotlib.animation import FFMpegWriter
 
 # Load data
-F1 = 5.18
+F1 = 51.8
 U = 100
 s = 1
 prob_class = 'IVP'
 output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
-snapshots_name = f'snapshots_F5_U_{U}_linear_noNu'
+snapshots_name = f'snapshots_F{int(np.floor(F1))}_U_{U}_linear_noNu'
 snapshots_file = output_dir + snapshots_name + '/' + snapshots_name
 
 with h5py.File(f'{snapshots_file}_s{s}.h5', "r") as f:
@@ -46,4 +46,4 @@ def update(frame):
 # Animate and save
 writer = FFMpegWriter(fps=10, metadata=dict(artist='Lin Yao'), bitrate=1800)
 ani = animation.FuncAnimation(fig, update, frames=nt, interval=100, blit=False)
-ani.save('out.mp4', writer=writer)
+ani.save(f'JupiterVortex/plots/{snapshots_name}.mp4', writer=writer)
