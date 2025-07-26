@@ -24,7 +24,7 @@ omega = 2 * np.pi / T  # rotation speed
 gamma = 2 * omega / a / a # dimensional gamma
 a_norm = a / L / 2.0   # dimensionless disk radius
 # ======= defined/changed ==========
-F1 = 51.8  # L**2/Ld1**2; can vary between 0.1 and 100
+F1 = 5.18  # L**2/Ld1**2; can vary between 0.1 and 100
 delta = 1.0 # H2/H1
 F2 = delta**2 * F1 # L**2/Ld1**2;
 U = 100
@@ -41,9 +41,9 @@ if prob_class == 'EVP':
     max_kphi = 30 # int(np.floor(Nphi/2) - 1)  
 elif prob_class == 'IVP':
     dtype = np.float64
-    timestep = 1e-3
+    timestep = 1e-4
     timestepper = d3.RK443
-    stop_sim_time = 10
+    stop_sim_time = 20
     initv = 1e-4
     if init_pattern == 'EVP':
         kphi_max_growth = 19  # max growth rate pattern
