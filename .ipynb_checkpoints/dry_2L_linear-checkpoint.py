@@ -9,8 +9,8 @@ loggers = [logging.getLogger(name) for name in logging.root.manager.loggerDict]
 for logger in loggers:
     logger.setLevel(logging.WARNING)
 
-prob_class = 'EVP'
-# prob_class = 'IVP' 
+# prob_class = 'EVP'
+prob_class = 'IVP' 
 restart = False
 init_pattern = 'random'  # 'evp_max_growth'
 
@@ -34,10 +34,11 @@ output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
 os.makedirs(output_dir, exist_ok=True)
 
 # numerical parameters
-m_max = 36
+m_max = 35
+Nphi = 4 * (m_max + 1)
 # Nphi = 2 * (m_max + 1)
-Nphi = 128
-Nr = 256
+# Nphi = 128
+Nr = 64
 
 if prob_class == 'EVP':
     dtype = np.complex128
@@ -57,6 +58,8 @@ elif prob_class == 'IVP':
     
     snapshots_name = f'snapshots_F{int(np.floor(F))}_U_{U}_linear_init{init_pattern}'
     snapshots_file = output_dir + snapshots_name
+    snapshots_file = 'snapshots'
+    checkpoint_path = 'checkpoints'
 
 
 # Bases
@@ -109,37 +112,39 @@ problem.add_equation("psi2(r=R) = 0")
 
 if prob_class == 'EVP':
     # solver = problem.build_solver(ncc_cutoff=1e-6, entry_cutoff=1e-6)
-    solver = problem.build_solver()
+    
     m_range = np.arange(1, m_max+1)
     evals_list = []
     psi1_list = []
     psi2_list = []
+    def custom_key(z, tol=1e-6):
+        if np.abs(z.real) < tol:
+            return (0, np.abs(z.imag))
+        else:
+            return (-z.real, 0)
     for m in m_range:
         # Solve
+        solver = problem.build_solver()
         sp = solver.subproblems_by_group[(m, None)]
         solver.solve_dense(sp)
         evals = solver.eigenvalues[np.isfinite(solver.eigenvalues)]
-        evals = evals[np.argsort(-evals.real)]
-        evals_list.append(evals[0:kn_zeros])
+        # evals = evals[np.argsort(-evals.real)]
+        evals = sorted(evals, key=lambda z: custom_key(z))
+        evals_list.append(np.copy(evals[0:kn_zeros*2]))
         print(f"m={m}, λ_max={evals[0]}")
-        
-        # Store the eigenfunctions 
+
         psi1_eigen = []
         psi2_eigen = []
-        for kn in np.arange(kn_zeros):
-            solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[kn])), sp.subsystems[0])
-            psi1_eigen.append(psi1['g'])
-            psi2_eigen.append(psi2['g']) 
+        for nk in np.arange(kn_zeros*2):
+            solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[nk])), sp.subsystems[0])
 
-        psi1_list.append(psi1_eigen)
-        psi2_list.append(psi2_eigen)
-
-    evals_list = np.asarray(evals_list)
-    psi1_list = np.asarray(psi1_list)
-    psi2_list = np.asarray(psi2_list)
-    print(f'psi1_list shape: {psi1_list.shape}')
-
-    hfile = h5py.File('EVP.h5', 'w')
+            psi1_eigen.append(np.copy(psi1['g'].real))
+            psi2_eigen.append(np.copy(psi2['g'].real))
+            
+        psi1_list.append(np.copy(psi1_eigen))
+        psi2_list.append(np.copy(psi2_eigen))
+        
+    hfile = h5py.File(f'EVP.h5', 'w')
     tasks = hfile.create_group('tasks')
     tasks.create_dataset('evals', data=evals_list)
     tasks.create_dataset('psi1', data=psi1_list)
@@ -147,7 +152,7 @@ if prob_class == 'EVP':
     tasks.create_dataset('phi', data=phi)
     tasks.create_dataset('r', data=r)
 
-elif probl_class == 'IVP':
+elif prob_class == 'IVP':
     solver = problem.build_solver(timestepper, ncc_cutoff=1e-6, entry_cutoff=1e-6)
     solver.stop_sim_time = stop_sim_time
 

@@ -19,7 +19,7 @@ gamma_dim = 2 * (2 * np.pi / P) / a**2
 L = 1e7 # m
 U = 100 # m/s
 T = L / U # s
-F = 5.18 # = L**2 / Ld**2
+F = 51.8 # = L**2 / Ld**2
 gamma = gamma_dim * L**2 * T
 R = R_dim / L
 print(f"gamma = {gamma}")
@@ -29,8 +29,9 @@ print(f"R     = {R}")
 # os.makedirs(evp_dir, exist_ok=True)
 
 # numerical parameters
-m_max = 36
-Nphi = 2 * (m_max + 1)
+m_max = 35
+# Nphi = 2 * (m_max + 1)
+Nphi = 4 * m_max
 Nr = 64
 dtype = np.complex128
 
@@ -87,29 +88,29 @@ for m in m_range:
     evals = evals[np.argsort(-evals.real)]
     evals_list.append(evals[0])
     print(f"m={m}, λ_max={evals[0]}")
-    # solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[0])), sp.subsystems[0])
+    solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[0])), sp.subsystems[0])
 
-    # # # Plot eigenfunction
-    # scales = (1, 1)
-    # psi1.change_scales(scales)
-    # psi2.change_scales(scales)
-    # phi, r = dist.local_grids(disk, scales=scales)
-    # x, y = coords.cartesian(phi, r)
+    # # Plot eigenfunction
+    scales = (1, 1)
+    psi1.change_scales(scales)
+    psi2.change_scales(scales)
+    phi, r = dist.local_grids(disk, scales=scales)
+    x, y = coords.cartesian(phi, r)
 
-    # print(psi1['g'].real.shape)
+    print(psi1['g'].real.shape)
 
-    # cmap = 'RdBu_r'
-    # fig, ax = plt.subplots(1, 2, figsize=(6, 6))
-    # ax[0].pcolormesh(x, y, psi1['g'].real, cmap=cmap)
-    # ax[0].set_title(r"$\psi_1$")
-    # ax[1].pcolormesh(x, y, psi2['g'].real, cmap=cmap)
-    # ax[1].set_title(r"$\psi_2$")
+    cmap = 'RdBu_r'
+    fig, ax = plt.subplots(1, 2, figsize=(6, 6))
+    ax[0].pcolormesh(x, y, psi1['g'].real, cmap=cmap)
+    ax[0].set_title(r"$\psi_1$")
+    ax[1].pcolormesh(x, y, psi2['g'].real, cmap=cmap)
+    ax[1].set_title(r"$\psi_2$")
 
-    # for axi in ax.flatten():
-    #     axi.set_aspect('equal')
-    #     axi.set_axis_off()
-    # fig.tight_layout()
-    # fig.savefig(f'./plots/EVP_dry_phi_m{m}_F{F}_U{U}.png', dpi=200)
+    for axi in ax.flatten():
+        axi.set_aspect('equal')
+        axi.set_axis_off()
+    fig.tight_layout()
+    fig.savefig(f'EVP_dry_phi_m{m}_F{F}_U{U}.png', dpi=200)
 
     # hfile = h5py.File(f'{evp_dir}EVP_dry_phi_m{kphi}_F{F}_U{U}.h5', 'w')
     # tasks = hfile.create_group('tasks')
