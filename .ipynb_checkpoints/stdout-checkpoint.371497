@@ -1,0 +1,38 @@
+run begins at: Sat Jul 26 15:57:28 EDT 2025
+Directory: /home/linyao/JupiterVortex
+node: 
+c081
+cores per node: 
+13
+list of loaded modules:
+ 
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,231 __main__ 1/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,232 __main__ 5/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,233 __main__ 6/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,233 __main__ 0/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,235 __main__ 11/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,235 __main__ 9/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,236 __main__ 4/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,241 __main__ 3/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,241 __main__ 2/12 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-26 15:57:36,260 __main__ 7/12 ERROR :: Exception raised, triggering end of main loop.

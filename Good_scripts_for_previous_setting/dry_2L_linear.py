@@ -9,8 +9,8 @@ loggers = [logging.getLogger(name) for name in logging.root.manager.loggerDict]
 for logger in loggers:
     logger.setLevel(logging.WARNING)
 
-prob_class = 'EVP'
-# prob_class = 'IVP' 
+# prob_class = 'EVP'
+prob_class = 'IVP' 
 restart = False
 init_pattern = 'random'  # 'evp_max_growth'
 
@@ -112,23 +112,30 @@ problem.add_equation("psi2(r=R) = 0")
 
 if prob_class == 'EVP':
     # solver = problem.build_solver(ncc_cutoff=1e-6, entry_cutoff=1e-6)
-    solver = problem.build_solver()
+    
     m_range = np.arange(1, m_max+1)
     evals_list = []
     psi1_list = []
     psi2_list = []
+    def custom_key(z, tol=1e-6):
+        if np.abs(z.real) < tol:
+            return (0, np.abs(z.imag))
+        else:
+            return (-z.real, 0)
     for m in m_range:
         # Solve
+        solver = problem.build_solver()
         sp = solver.subproblems_by_group[(m, None)]
         solver.solve_dense(sp)
         evals = solver.eigenvalues[np.isfinite(solver.eigenvalues)]
-        evals = evals[np.argsort(-evals.real)]
-        evals_list.append(np.copy(evals[0:kn_zeros]))
+        # evals = evals[np.argsort(-evals.real)]
+        evals = sorted(evals, key=lambda z: custom_key(z))
+        evals_list.append(np.copy(evals[0:kn_zeros*2]))
         print(f"m={m}, λ_max={evals[0]}")
 
         psi1_eigen = []
         psi2_eigen = []
-        for nk in np.arange(kn_zeros):
+        for nk in np.arange(kn_zeros*2):
             solver.set_state(np.argmin(np.abs(solver.eigenvalues - evals[nk])), sp.subsystems[0])
 
             psi1_eigen.append(np.copy(psi1['g'].real))

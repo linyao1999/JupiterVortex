@@ -12,7 +12,7 @@ for logger in loggers:
 # prob_class = 'EVP'
 prob_class = 'IVP' 
 restart = False
-init_pattern = 'random'  # 'evp_max_growth'
+init_pattern = 'random'  # 'evp_max_growth'; 'random'
 
 # Parameters
 # Physical paramters
@@ -34,30 +34,31 @@ output_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/{prob_class}/'
 os.makedirs(output_dir, exist_ok=True)
 
 # numerical parameters
-m_max = 35
+m_max = 71
 Nphi = 4 * (m_max + 1)
 # Nphi = 2 * (m_max + 1)
 # Nphi = 128
-Nr = 64
+Nr = 256
 
 if prob_class == 'EVP':
     dtype = np.complex128
     kn_zeros = 5 # the number of zeros of the Bessel function to store
+    nu = 0
 elif prob_class == 'IVP':
     dtype = np.float64
     timestep = 1e-3
     timestepper = d3.RK443
-    stop_sim_time = 20
+    stop_sim_time = 10
     dealias = 3/2
-    initv_scale = 1e-4
+    initv_scale = 1
+    nu = 1e-6
 
     if init_pattern == 'evp_max_growth':
         m_max_growth = 19
-        init_pattern_dir = f'/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EVP/'
-        init_pattern_file = f'{init_pattern_dir}EVP_dry_2L_linear_F{F1}_U{U}_m{kphi_max_growth}.h5'
+        init_pattern_file = 'EVP.h5'
     
-    snapshots_name = f'snapshots_F{int(np.floor(F))}_U_{U}_linear_init{init_pattern}'
-    snapshots_file = output_dir + snapshots_name
+    # snapshots_name = f'snapshots_F{int(np.floor(F))}_U_{U}_linear_init{init_pattern}'
+    # snapshots_file = output_dir + snapshots_name
     snapshots_file = 'snapshots'
     checkpoint_path = 'checkpoints'
 
@@ -103,8 +104,8 @@ if prob_class == 'EVP':
 elif prob_class == 'IVP':
     problem = d3.IVP([psi1, psi2, tau_psi1, tau_psi2], namespace=locals())
     
-problem.add_equation("dt(q1) + u1@grad(Q1) + U1@grad(q1) + lift(tau_psi1) = 0")
-problem.add_equation("dt(q2) + u2@grad(Q2) + U2@grad(q2) + lift(tau_psi2) = 0")
+problem.add_equation("dt(q1) + u1@grad(Q1) + U1@grad(q1) + nu * q1 + lift(tau_psi1) = 0")
+problem.add_equation("dt(q2) + u2@grad(Q2) + U2@grad(q2) + nu * q2 + lift(tau_psi2) = 0")
 problem.add_equation("psi1(r=R) = 0")
 problem.add_equation("psi2(r=R) = 0")
 
@@ -162,10 +163,13 @@ elif prob_class == 'IVP':
         if init_pattern == 'random':
             psi1.fill_random('g', seed=42, distribution='standard_normal')
             psi2.fill_random('g', seed=42, distribution='standard_normal') 
+            psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+            psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
         elif init_pattern == 'evp_max_growth':
             with h5py.File(init_pattern_file, 'r') as f:
-                psi1.load_from_global_grid_data(f["tasks/psi1"][:].real)
-                psi2.load_from_global_grid_data(f["tasks/psi2"][:].real)
+                psi1.load_from_global_grid_data(f["tasks/psi1"][:][m_max_growth-1,0,:,:].real)
+                psi2.load_from_global_grid_data(f["tasks/psi2"][:][m_max_growth-1,0,:,:].real)
+            
         psi1['g'] *= initv_scale
         psi2['g'] *= initv_scale
     else:
@@ -176,6 +180,8 @@ elif prob_class == 'IVP':
     snapshots = solver.evaluator.add_file_handler(snapshots_file, sim_dt=0.1, max_writes=10000, mode=file_handler_mode)
     snapshots.add_task(psi1, scales=(1, 1), name='psi1')
     snapshots.add_task(psi2, scales=(1, 1), name='psi2')
+    snapshots.add_task(q1, scales=(1, 1), name='q1')
+    snapshots.add_task(q2, scales=(1, 1), name='q2')
 
     checkpoints = solver.evaluator.add_file_handler(checkpoint_path, sim_dt=5, max_writes=1, mode=file_handler_mode)
     checkpoints.add_tasks(solver.state)
@@ -188,6 +194,10 @@ elif prob_class == 'IVP':
         logger.info('Starting main loop')
         while solver.proceed:
             solver.step(timestep)
+            # # apply low_pass_filter at each time step for psi1 and psi2; BAD 
+            # psi1.low_pass_filter(scales=0.8) # Keep only lower fourth of the modes
+            # psi2.low_pass_filter(scales=0.8) # Keep only lower fourth of the modes
+            
             if (solver.iteration-1) % 1000 == 0:
                 max_psi1 = np.sqrt(flow.max('ke'))
                 logger.info("Iteration=%i, Time=%e, dt=%e, max(psi1)=%e" %(solver.iteration, solver.sim_time, timestep, max_psi1))

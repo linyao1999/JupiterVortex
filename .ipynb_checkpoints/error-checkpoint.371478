@@ -1,0 +1,6 @@
+anaconda3/2023.07(5):ERROR:150: Module 'anaconda3/2023.07' conflicts with the currently loaded module(s) 'anaconda3/2024.06'
+anaconda3/2023.07(5):ERROR:102: Tcl command execution failed: conflict	 anaconda3 
+
+Currently Loaded Modulefiles:
+  1) anaconda3/2024.06   2) slurm/20161123      3) ffmpeg/4.3.1
+/tmp/slurmd/job371478/slurm_script: line 38: activate: No such file or directory

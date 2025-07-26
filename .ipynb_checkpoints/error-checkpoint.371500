@@ -1,0 +1,37 @@
+/tmp/slurmd/job371500/slurm_script: line 27: activate: No such file or directory
+Currently Loaded Modulefiles:
+  1) anaconda3/2024.06   2) slurm/20161123
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/array.py:117: RuntimeWarning: invalid value encountered in matmul
+  temp = np.matmul(matrix, array) # Allocates temp
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/array.py:117: RuntimeWarning: invalid value encountered in matmul
+  temp = np.matmul(matrix, array) # Allocates temp
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/JupiterVortex/dry_2L_linear.py:200: RuntimeWarning: invalid value encountered in sqrt
+  max_psi1 = np.sqrt(flow.max('ke'))
+/home/linyao/JupiterVortex/dry_2L_linear.py:200: RuntimeWarning: invalid value encountered in sqrt
+  max_psi1 = np.sqrt(flow.max('ke'))
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py:385: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/array.py:117: RuntimeWarning: invalid value encountered in matmul
+  temp = np.matmul(matrix, array) # Allocates temp
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/array.py:117: RuntimeWarning: overflow encountered in matmul
+  temp = np.matmul(matrix, array) # Allocates temp

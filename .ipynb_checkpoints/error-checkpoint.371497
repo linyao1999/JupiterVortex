@@ -1,0 +1,227 @@
+/tmp/slurmd/job371497/slurm_script: line 27: activate: No such file or directory
+Currently Loaded Modulefiles:
+  1) anaconda3/2024.06   2) slurm/20161123
+Traceback (most recent call last):
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
+Traceback (most recent call last):
+  File "/home/linyao/JupiterVortex/dry_2L_linear_lapNu.py", line 209, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 639, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/libraries/matsolvers.py", line 141, in __init__
+    self.LU = spla.splu(matrix.tocsc(),
+              ~~~~~~~~~^^^^^^^^^^^^^^^^
+                        permc_spec=self.permc_spec,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                        panel_size=self.panel_size,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        options=self.options)
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 433, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, indices, indptr,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          csc_construct_func=csc_construct_func,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ilu=False, options=_options)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular

@@ -1,0 +1,15 @@
+/tmp/slurmd/job371496/slurm_script: line 27: activate: No such file or directory
+Currently Loaded Modulefiles:
+  1) anaconda3/2024.06   2) slurm/20161123
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory
+python3: can't open file '/home/linyao/JupiterVortex/dry_2L_linearEQ_noNu.py': [Errno 2] No such file or directory

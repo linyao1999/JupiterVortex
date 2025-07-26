@@ -23,8 +23,8 @@ dist = d3.Distributor(coords, dtype=dtype)
 disk = d3.DiskBasis(coords, shape=(Nphi, Nr), radius=a_norm, dtype=dtype)
 phi, r = dist.local_grids(disk)
 
-r3 = dist.Field(bases=disk)
-# r3 = dist.Field(bases=disk.radial_basis)
+# r3 = dist.Field(bases=disk)
+r3 = dist.Field(bases=disk.radial_basis)
 r3['g'] = r**4  # radial coordinate
 Psi1 = r3
 Psi2 = - r3
