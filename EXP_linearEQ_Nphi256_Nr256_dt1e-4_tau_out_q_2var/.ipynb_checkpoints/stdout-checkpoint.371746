@@ -1,0 +1,104 @@
+run begins at: Mon Jul 28 07:44:25 EDT 2025
+Directory: /home/linyao/JupiterVortex/EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+node: 
+c081
+cores per node: 
+13
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+gamma = 0.7198176581830783
+R     = 3.495
+EXP_linearEQ_Nphi256_Nr256_dt1e-4_tau_out_q_2var
+2025-07-28 07:44:39,527 subsystems 0/32 INFO :: Building subproblem matrices 1/4 (~25%) Elapsed: 2s, Remaining: 6s, Rate: 4.9e-01/s
+2025-07-28 07:44:41,218 subsystems 0/32 INFO :: Building subproblem matrices 2/4 (~50%) Elapsed: 4s, Remaining: 4s, Rate: 5.4e-01/s
