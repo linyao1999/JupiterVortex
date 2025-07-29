@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 # prob_class = 'EVP'
 prob_class = 'IVP' 
 restart = False 
-init_pattern = 'evp_max_growth'  # 'evp_max_growth'; 'random'
+init_pattern = 'random'  # 'evp_max_growth'; 'random'
 
 # Parameters
 # Physical paramters
@@ -45,9 +45,9 @@ if prob_class == 'EVP':
     kn_zeros = 5 # the number of zeros of the Bessel function to store
 elif prob_class == 'IVP':
     dtype = np.float64
-    timestep = 1e-4
+    timestep = 1e-1
     timestepper = d3.RK443
-    stop_sim_time = 20
+    stop_sim_time = 50
     dealias = 3/2
     initv_scale = 1
 
@@ -100,8 +100,8 @@ if prob_class == 'EVP':
 elif prob_class == 'IVP':
     problem = d3.IVP([psi1, psi2, tau_psi1, tau_psi2], namespace=locals())
     
-problem.add_equation("dt(q1) + u1@grad(Q1) + U1@grad(q1) = 0")
-problem.add_equation("dt(q2) + u2@grad(Q2) + U2@grad(q2) = 0")
+problem.add_equation("dt(q1) = - (u1@grad(Q1) + U1@grad(q1))")
+problem.add_equation("dt(q2) = - (u2@grad(Q2) + U2@grad(q2))")
 problem.add_equation("psi1(r=R) = 0")
 problem.add_equation("psi2(r=R) = 0")
 
