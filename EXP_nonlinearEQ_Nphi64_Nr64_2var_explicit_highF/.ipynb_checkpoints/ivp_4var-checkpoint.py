@@ -44,6 +44,9 @@ psi1 = dist.Field(name='psi1', bases=disk)
 psi2 = dist.Field(name='psi2', bases=disk)
 tau_psi1 = dist.Field(name='tau_psi1', bases=disk.edge)
 tau_psi2 = dist.Field(name='tau_psi2', bases=disk.edge)
+
+q1 = dist.Field(name='q1', bases=disk)
+q2 = dist.Field(name='q2', bases=disk)
 tau_q1 = dist.Field(name='tau_q1', bases=disk.edge)
 tau_q2 = dist.Field(name='tau_q2', bases=disk.edge)
 
@@ -51,8 +54,8 @@ tau_q2 = dist.Field(name='tau_q2', bases=disk.edge)
 psi2u = lambda A: d3.Skew(d3.Gradient(A))
 lift_basis = disk
 lift = lambda A: d3.Lift(A, lift_basis, -1)
-q1 = d3.lap(psi1) - F * (psi1 - psi2)
-q2 = d3.lap(psi2) + F * (psi1 - psi2)
+# q1 = d3.lap(psi1) - F * (psi1 - psi2)
+# q2 = d3.lap(psi2) + F * (psi1 - psi2)
 u1 = psi2u(psi1)
 u2 = psi2u(psi2)
 
@@ -67,13 +70,15 @@ U1 = psi2u(Psi1)
 U2 = psi2u(Psi2)
 
 # Problem
-problem = d3.IVP([psi1, psi2, tau_q1, tau_q2], namespace=locals())
-problem.add_equation("dt(q1) + lift(tau_q1) - nu*lap(q1) = -(U1@grad(q1) + u1@grad(q1) + u1@grad(Q1))")
-problem.add_equation("dt(q2) + lift(tau_q2) - nu*lap(q2) = -(U2@grad(q2) + u2@grad(q2) + u2@grad(Q2))")
+problem = d3.IVP([psi1, psi2, tau_psi1, tau_psi2, q1, q2, tau_q1, tau_q2], namespace=locals())
+problem.add_equation("q1 - (lap(psi1) - F * (psi1 - psi2)) + lift(tau_psi1) = 0")
+problem.add_equation("q2 - (lap(psi2) + F * (psi1 - psi2)) + lift(tau_psi2) = 0")
+problem.add_equation("dt(q1) - nu*lap(q1) + lift(tau_q1) = -(U1@grad(q1) + u1@grad(q1) + u1@grad(Q1))")
+problem.add_equation("dt(q2) - nu*lap(q2) + lift(tau_q2) = -(U2@grad(q2) + u2@grad(q2) + u2@grad(Q2))")
 problem.add_equation("psi1(r=R) = 0")
 problem.add_equation("psi2(r=R) = 0")
-# problem.add_equation("q1(r=R) = 0")
-# problem.add_equation("q2(r=R) = 0")
+problem.add_equation("q1(r=R) = 0")
+problem.add_equation("q2(r=R) = 0")
 
 # Solver
 solver = problem.build_solver(timestepper)

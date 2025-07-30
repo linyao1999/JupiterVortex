@@ -27,10 +27,11 @@ print(f"R     = {R}")
 Nphi = 64
 Nr = 64
 timestepper = "RK443"
-timestep = 0.01
-stop_sim_time = 10
+timestep = 1e-2
+stop_sim_time = 2.1
 dtype = np.float64
-initv = 1e-6 
+initv = 1e-3
+nu = 1e-10
 
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
@@ -43,6 +44,8 @@ psi1 = dist.Field(name='psi1', bases=disk)
 psi2 = dist.Field(name='psi2', bases=disk)
 tau_psi1 = dist.Field(name='tau_psi1', bases=disk.edge)
 tau_psi2 = dist.Field(name='tau_psi2', bases=disk.edge)
+tau_q1 = dist.Field(name='tau_q1', bases=disk.edge)
+tau_q2 = dist.Field(name='tau_q2', bases=disk.edge)
 
 # Substitutions
 psi2u = lambda A: d3.Skew(d3.Gradient(A))
@@ -64,14 +67,17 @@ U1 = psi2u(Psi1)
 U2 = psi2u(Psi2)
 
 # Problem
-problem = d3.IVP([psi1, psi2, tau_psi1, tau_psi2], namespace=locals())
-problem.add_equation("dt(q1) + lift(tau_psi1) = -(u1@grad(Q1) + U1@grad(q1) + u1@grad(q1))")
-problem.add_equation("dt(q2) + lift(tau_psi2) = -(u2@grad(Q2) + U2@grad(q2) + u2@grad(q2))")
+problem = d3.IVP([psi1, psi2, tau_q1, tau_q2], namespace=locals())
+problem.add_equation("dt(q1) + lift(tau_q1) - nu*lap(q1) = -(U1@grad(q1) + u1@grad(q1) + u1@grad(Q1))")
+problem.add_equation("dt(q2) + lift(tau_q2) - nu*lap(q2) = -(U2@grad(q2) + u2@grad(q2) + u2@grad(Q2))")
 problem.add_equation("psi1(r=R) = 0")
 problem.add_equation("psi2(r=R) = 0")
+# problem.add_equation("q1(r=R) = 0")
+# problem.add_equation("q2(r=R) = 0")
 
 # Solver
 solver = problem.build_solver(timestepper)
+solver.print_subproblem_ranks(solver.subproblems, timestep)
 solver.stop_sim_time = stop_sim_time
 
 # Initial conditions
@@ -85,7 +91,7 @@ psi2['g'] *= initv
 
 # Analysis , sim_dt=1
 # snapshots = solver.evaluator.add_file_handler('snapshots', iter=100, max_writes=10)
-snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=0.1, max_writes=1000)
+snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=0.01, max_writes=1000)
 snapshots.add_tasks(solver.state, scales=(8,1))
 
 # Flow properties

@@ -1,0 +1,97 @@
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-29 17:26:49,863 subsystems 0/32 INFO :: Building subproblem matrices 1/1 (~100%) Elapsed: 0s, Remaining: 0s, Rate: 1.7e+01/s
+2025-07-29 17:26:49,883 __main__ 0/32 INFO :: Starting main loop
+2025-07-29 17:26:49,992 __main__ 2/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 4/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 5/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 6/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 7/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 12/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 14/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 20/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 22/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 25/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 31/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 1/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 3/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 8/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 9/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 10/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 13/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 15/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 16/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 17/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 18/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 19/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 21/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 23/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 24/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 26/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 27/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 28/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 29/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 30/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-29 17:26:49,992 __main__ 11/32 ERROR :: Exception raised, triggering end of main loop.
