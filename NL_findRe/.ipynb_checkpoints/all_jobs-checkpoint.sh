@@ -6,10 +6,18 @@ source activate dedalus3
 # Custom experiment parameters
 Nphi=128
 Nr=256
-Re_list=(10)
-F_list=(51.8)
-# Re_list=(1 10 20 50 100 1000)
-# F_list=(51.8 100)
+
+# Re_list=(200)
+# F_list=(5.18)
+
+# Re_list=(10)
+# F_list=(51.8)
+
+Re_list=(4)
+F_list=(100)
+
+# Re_list=(2)
+# F_list=(400 900)
 
 mkdir -p log
 
@@ -49,6 +57,7 @@ export Nphi=${Nphi}
 export Nr=${Nr}
 export Re=${Re}
 export F=${F}
+echo "Nphi=\${Nphi}, Nr=\${Nr}, Re=\${Re}, F=\${F}"
 mpirun -n 32 python3 ivp.py
 echo "Finished job at \$(date)"
 EOF

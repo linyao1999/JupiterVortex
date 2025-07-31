@@ -1,7 +1,0 @@
-Running job at Wed Jul 30 21:53:38 EDT 2025 on c075
-gamma = 0.7198176581830783
-R     = 3.495
-2025-07-30 21:53:47,361 subsystems 0/32 INFO :: Building subproblem matrices 1/4 (~25%) Elapsed: 2s, Remaining: 5s, Rate: 5.6e-01/s
-2025-07-30 21:53:48,933 subsystems 0/32 INFO :: Building subproblem matrices 2/4 (~50%) Elapsed: 3s, Remaining: 3s, Rate: 5.9e-01/s
-2025-07-30 21:53:50,691 subsystems 0/32 INFO :: Building subproblem matrices 3/4 (~75%) Elapsed: 5s, Remaining: 2s, Rate: 5.9e-01/s
-2025-07-30 21:53:52,208 subsystems 0/32 INFO :: Building subproblem matrices 4/4 (~100%) Elapsed: 7s, Remaining: 0s, Rate: 6.0e-01/s

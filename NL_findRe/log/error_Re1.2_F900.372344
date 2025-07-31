@@ -1,0 +1,609 @@
+/tmp/slurmd/job372344/slurm_script: line 13: activate: No such file or directory
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re1.2_F900/ivp.py", line 126, in <module>
+    snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 313, in add_tasks
+    for task in tasks:
+                ^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 265, in __getitem__
+    return field[layout]
+           ~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 585, in __getitem__
+    self.change_layout(layout)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/field.py", line 653, in change_layout
+    layout = self.dist.get_layout_object(layout)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/distributor.py", line 182, in get_layout_object
+    return self.layout_references[input]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0

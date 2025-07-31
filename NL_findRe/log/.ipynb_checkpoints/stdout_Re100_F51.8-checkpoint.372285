@@ -1,0 +1,52 @@
+Running job at Wed Jul 30 22:37:30 EDT 2025 on c085
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-30 22:37:37,908 subsystems 0/32 INFO :: Building subproblem matrices 1/2 (~50%) Elapsed: 1s, Remaining: 1s, Rate: 1.0e+00/s
+2025-07-30 22:37:38,735 subsystems 0/32 INFO :: Building subproblem matrices 2/2 (~100%) Elapsed: 2s, Remaining: 0s, Rate: 1.1e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 1029/1029, cond: 2.7e+05
+MPI rank: 0, subproblem: 1, group: (63, None), matrix rank: 1808/1808, cond: 2.8e+05
+2025-07-30 22:38:23,427 __main__ 0/32 INFO :: Starting main loop
+2025-07-30 22:38:24,921 __main__ 0/32 INFO :: Iteration=1, Time=1.000000e-03, dt=1.000000e-03, integ(KE)=2.552e-08
+2025-07-30 22:38:33,950 __main__ 0/32 INFO :: Iteration=101, Time=1.010000e-01, dt=1.000000e-03, integ(KE)=7.972e-08
+2025-07-30 22:38:44,839 __main__ 0/32 INFO :: Iteration=201, Time=2.010000e-01, dt=1.000000e-03, integ(KE)=1.544e-07
+2025-07-30 22:38:53,821 __main__ 0/32 INFO :: Iteration=301, Time=3.010000e-01, dt=1.000000e-03, integ(KE)=4.796e-07
+2025-07-30 22:39:03,416 __main__ 0/32 INFO :: Iteration=401, Time=4.010000e-01, dt=1.000000e-03, integ(KE)=2.058e-06
+2025-07-30 22:39:14,001 __main__ 0/32 INFO :: Iteration=501, Time=5.010000e-01, dt=1.000000e-03, integ(KE)=1.067e-05
+2025-07-30 22:39:22,136 __main__ 0/32 INFO :: Iteration=601, Time=6.010000e-01, dt=1.000000e-03, integ(KE)=6.206e-05
+2025-07-30 22:39:31,146 __main__ 0/32 INFO :: Iteration=701, Time=7.010000e-01, dt=1.000000e-03, integ(KE)=3.894e-04
+2025-07-30 22:39:39,794 __main__ 0/32 INFO :: Iteration=801, Time=8.010000e-01, dt=1.000000e-03, integ(KE)=2.579e-03
+2025-07-30 22:39:48,904 __main__ 0/32 INFO :: Iteration=901, Time=9.010000e-01, dt=1.000000e-03, integ(KE)=1.778e-02
+2025-07-30 22:39:59,128 __main__ 0/32 INFO :: Iteration=1001, Time=1.001000e+00, dt=1.000000e-03, integ(KE)=1.262e-01
+2025-07-30 22:40:08,047 __main__ 0/32 INFO :: Iteration=1101, Time=1.101000e+00, dt=1.000000e-03, integ(KE)=9.161e-01
+2025-07-30 22:40:17,391 __main__ 0/32 INFO :: Iteration=1201, Time=1.201000e+00, dt=1.000000e-03, integ(KE)=6.753e+00
+2025-07-30 22:40:26,383 __main__ 0/32 INFO :: Iteration=1301, Time=1.301000e+00, dt=1.000000e-03, integ(KE)=5.002e+01
+2025-07-30 22:40:35,033 __main__ 0/32 INFO :: Iteration=1401, Time=1.401000e+00, dt=1.000000e-03, integ(KE)=3.542e+02
+2025-07-30 22:40:43,188 __main__ 0/32 INFO :: Iteration=1501, Time=1.501000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:40:52,693 __main__ 0/32 INFO :: Iteration=1601, Time=1.601000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:01,159 __main__ 0/32 INFO :: Iteration=1701, Time=1.701000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:10,242 __main__ 0/32 INFO :: Iteration=1801, Time=1.801000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:20,068 __main__ 0/32 INFO :: Iteration=1901, Time=1.901000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:29,499 __main__ 0/32 INFO :: Iteration=2001, Time=2.001000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:38,674 __main__ 0/32 INFO :: Iteration=2101, Time=2.101000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:49,001 __main__ 0/32 INFO :: Iteration=2201, Time=2.201000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:41:57,613 __main__ 0/32 INFO :: Iteration=2301, Time=2.301000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:42:07,194 __main__ 0/32 INFO :: Iteration=2401, Time=2.401000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:42:16,720 __main__ 0/32 INFO :: Iteration=2501, Time=2.501000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:42:26,230 __main__ 0/32 INFO :: Iteration=2601, Time=2.601000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:42:35,768 __main__ 0/32 INFO :: Iteration=2701, Time=2.701000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:42:45,235 __main__ 0/32 INFO :: Iteration=2801, Time=2.801000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:42:53,832 __main__ 0/32 INFO :: Iteration=2901, Time=2.901000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:03,931 __main__ 0/32 INFO :: Iteration=3001, Time=3.001000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:13,852 __main__ 0/32 INFO :: Iteration=3101, Time=3.101000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:22,480 __main__ 0/32 INFO :: Iteration=3201, Time=3.201000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:31,560 __main__ 0/32 INFO :: Iteration=3301, Time=3.301000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:41,301 __main__ 0/32 INFO :: Iteration=3401, Time=3.401000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:48,667 __main__ 0/32 INFO :: Iteration=3501, Time=3.501000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:43:59,519 __main__ 0/32 INFO :: Iteration=3601, Time=3.601000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:07,672 __main__ 0/32 INFO :: Iteration=3701, Time=3.701000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:15,690 __main__ 0/32 INFO :: Iteration=3801, Time=3.801000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:23,275 __main__ 0/32 INFO :: Iteration=3901, Time=3.901000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:31,611 __main__ 0/32 INFO :: Iteration=4001, Time=4.001000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:39,022 __main__ 0/32 INFO :: Iteration=4101, Time=4.101000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:47,048 __main__ 0/32 INFO :: Iteration=4201, Time=4.201000e+00, dt=1.000000e-03, integ(KE)=-inf
+2025-07-30 22:44:55,749 __main__ 0/32 INFO :: Iteration=4301, Time=4.301000e+00, dt=1.000000e-03, integ(KE)=-inf

@@ -1,0 +1,133 @@
+Running job at Thu Jul 31 08:26:39 EDT 2025 on c075
+Nphi=128, Nr=256, Re=1.2, F=900
+gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495gamma = 0.7198176581830783
+R     = 3.495
+
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495gamma = 0.7198176581830783
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-31 08:26:46,164 subsystems 0/32 INFO :: Building subproblem matrices 1/2 (~50%) Elapsed: 1s, Remaining: 1s, Rate: 1.0e+00/s
+2025-07-31 08:26:47,014 subsystems 0/32 INFO :: Building subproblem matrices 2/2 (~100%) Elapsed: 2s, Remaining: 0s, Rate: 1.1e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 1029/1029, cond: 9.5e+04
+MPI rank: 0, subproblem: 1, group: (63, None), matrix rank: 1808/1808, cond: 1.5e+06
+MPI rank: 30, subproblem: 0, group: (30, None), matrix rank: 1936/1936, cond: 4.6e+05
+MPI rank: 22, subproblem: 0, group: (22, None), matrix rank: 1968/1968, cond: 3.3e+05
+MPI rank: 27, subproblem: 0, group: (27, None), matrix rank: 1952/1952, cond: 4.0e+05
+MPI rank: 23, subproblem: 0, group: (23, None), matrix rank: 1968/1968, cond: 3.4e+05
+MPI rank: 28, subproblem: 0, group: (28, None), matrix rank: 1944/1944, cond: 4.2e+05
+MPI rank: 26, subproblem: 0, group: (26, None), matrix rank: 1952/1952, cond: 3.8e+05
+MPI rank: 31, subproblem: 0, group: (31, None), matrix rank: 1936/1936, cond: 4.8e+05
+MPI rank: 29, subproblem: 0, group: (29, None), matrix rank: 1944/1944, cond: 4.4e+05
+MPI rank: 20, subproblem: 0, group: (20, None), matrix rank: 1976/1976, cond: 3.0e+05
+MPI rank: 16, subproblem: 0, group: (16, None), matrix rank: 1992/1992, cond: 2.6e+05
+MPI rank: 25, subproblem: 0, group: (25, None), matrix rank: 1960/1960, cond: 3.6e+05
+MPI rank: 17, subproblem: 0, group: (17, None), matrix rank: 1992/1992, cond: 2.7e+05
+MPI rank: 15, subproblem: 0, group: (15, None), matrix rank: 2000/2000, cond: 2.5e+05
+MPI rank: 24, subproblem: 0, group: (24, None), matrix rank: 1960/1960, cond: 3.5e+05
+MPI rank: 12, subproblem: 0, group: (12, None), matrix rank: 2008/2008, cond: 2.2e+05
+MPI rank: 13, subproblem: 0, group: (13, None), matrix rank: 2008/2008, cond: 2.3e+05
+MPI rank: 21, subproblem: 0, group: (21, None), matrix rank: 1976/1976, cond: 3.2e+05
+MPI rank: 6, subproblem: 0, group: (6, None), matrix rank: 2032/2032, cond: 1.6e+05
+MPI rank: 18, subproblem: 0, group: (18, None), matrix rank: 1984/1984, cond: 2.8e+05
+MPI rank: 8, subproblem: 0, group: (8, None), matrix rank: 2024/2024, cond: 1.8e+05
+MPI rank: 19, subproblem: 0, group: (19, None), matrix rank: 1984/1984, cond: 2.9e+05
+MPI rank: 14, subproblem: 0, group: (14, None), matrix rank: 2000/2000, cond: 2.4e+05
+MPI rank: 11, subproblem: 0, group: (11, None), matrix rank: 2016/2016, cond: 2.1e+05
+MPI rank: 10, subproblem: 0, group: (10, None), matrix rank: 2016/2016, cond: 2.0e+05
+MPI rank: 1, subproblem: 0, group: (1, None), matrix rank: 2056/2056, cond: 9.7e+04
+MPI rank: 9, subproblem: 0, group: (9, None), matrix rank: 2024/2024, cond: 1.9e+05
+MPI rank: 7, subproblem: 0, group: (7, None), matrix rank: 2032/2032, cond: 1.7e+05
+MPI rank: 2, subproblem: 0, group: (2, None), matrix rank: 2048/2048, cond: 1.0e+05
+MPI rank: 3, subproblem: 0, group: (3, None), matrix rank: 2048/2048, cond: 1.2e+05
+MPI rank: 5, subproblem: 0, group: (5, None), matrix rank: 2040/2040, cond: 1.5e+05
+MPI rank: 4, subproblem: 0, group: (4, None), matrix rank: 2040/2040, cond: 1.3e+05
+MPI rank: 6, subproblem: 1, group: (57, None), matrix rank: 1832/1832, cond: 1.3e+06
+MPI rank: 22, subproblem: 1, group: (41, None), matrix rank: 1896/1896, cond: 7.3e+05
+MPI rank: 12, subproblem: 1, group: (51, None), matrix rank: 1856/1856, cond: 1.0e+06
+MPI rank: 13, subproblem: 1, group: (50, None), matrix rank: 1856/1856, cond: 1.0e+06
+MPI rank: 23, subproblem: 1, group: (40, None), matrix rank: 1896/1896, cond: 7.0e+05
+MPI rank: 15, subproblem: 1, group: (48, None), matrix rank: 1864/1864, cond: 9.4e+05
+MPI rank: 16, subproblem: 1, group: (47, None), matrix rank: 1872/1872, cond: 9.0e+05
+MPI rank: 17, subproblem: 1, group: (46, None), matrix rank: 1872/1872, cond: 8.7e+05
+MPI rank: 30, subproblem: 1, group: (33, None), matrix rank: 1928/1928, cond: 5.2e+05
+MPI rank: 8, subproblem: 1, group: (55, None), matrix rank: 1840/1840, cond: 1.2e+06
+MPI rank: 20, subproblem: 1, group: (43, None), matrix rank: 1888/1888, cond: 7.8e+05
+MPI rank: 27, subproblem: 1, group: (36, None), matrix rank: 1912/1912, cond: 6.0e+05
+MPI rank: 1, subproblem: 1, group: (62, None), matrix rank: 1808/1808, cond: 1.5e+06
+MPI rank: 2, subproblem: 1, group: (61, None), matrix rank: 1816/1816, cond: 1.4e+06
+MPI rank: 3, subproblem: 1, group: (60, None), matrix rank: 1816/1816, cond: 1.4e+06
+MPI rank: 26, subproblem: 1, group: (37, None), matrix rank: 1912/1912, cond: 6.2e+05
+MPI rank: 28, subproblem: 1, group: (35, None), matrix rank: 1920/1920, cond: 5.7e+05
+MPI rank: 18, subproblem: 1, group: (45, None), matrix rank: 1880/1880, cond: 8.4e+05
+MPI rank: 25, subproblem: 1, group: (38, None), matrix rank: 1904/1904, cond: 6.5e+05
+MPI rank: 21, subproblem: 1, group: (42, None), matrix rank: 1888/1888, cond: 7.6e+05
+MPI rank: 7, subproblem: 1, group: (56, None), matrix rank: 1832/1832, cond: 1.2e+06
+MPI rank: 19, subproblem: 1, group: (44, None), matrix rank: 1880/1880, cond: 8.1e+05
+MPI rank: 11, subproblem: 1, group: (52, None), matrix rank: 1848/1848, cond: 1.1e+06
+MPI rank: 14, subproblem: 1, group: (49, None), matrix rank: 1864/1864, cond: 9.7e+05
+MPI rank: 29, subproblem: 1, group: (34, None), matrix rank: 1920/1920, cond: 5.5e+05
+MPI rank: 24, subproblem: 1, group: (39, None), matrix rank: 1904/1904, cond: 6.7e+05
+MPI rank: 10, subproblem: 1, group: (53, None), matrix rank: 1848/1848, cond: 1.1e+06
+MPI rank: 31, subproblem: 1, group: (32, None), matrix rank: 1928/1928, cond: 5.0e+05
+MPI rank: 9, subproblem: 1, group: (54, None), matrix rank: 1840/1840, cond: 1.1e+06
+MPI rank: 5, subproblem: 1, group: (58, None), matrix rank: 1824/1824, cond: 1.3e+06
+MPI rank: 4, subproblem: 1, group: (59, None), matrix rank: 1824/1824, cond: 1.3e+06
+Finished job at Thu Jul 31 08:27:32 EDT 2025

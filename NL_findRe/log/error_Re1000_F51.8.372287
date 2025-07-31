@@ -1,0 +1,6 @@
+/tmp/slurmd/job372287/slurm_script: line 13: activate: No such file or directory
+/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/array.py:117: RuntimeWarning: invalid value encountered in matmul
+  temp = np.matmul(matrix, array) # Allocates temp
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 372287.0 ON c087 CANCELLED AT 2025-07-30T22:44:38 ***
+slurmstepd: error: *** JOB 372287 ON c087 CANCELLED AT 2025-07-30T22:44:38 ***

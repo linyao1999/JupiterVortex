@@ -34,7 +34,7 @@ timestepper = "RK443"
 timestep = 1e-3
 initial_timestep = timestep
 max_timestep = 1e-2
-stop_sim_time = 2
+stop_sim_time = 100
 dtype = np.float64
 initv = 1e-3
 dealias = 3/2
@@ -114,13 +114,16 @@ if not restart:
     psi2['g'] *= initv
     file_handler_mode = 'overwrite'
 else:
-    write, initial_timestep = solver.load_state('snapshots/snapshots_s1.h5')
+    write, initial_timestep = solver.load_state('snapshots/snapshots_s2.h5')
     file_handler_mode = 'append'
 
 # Analysis , sim_dt=1
 # snapshots = solver.evaluator.add_file_handler('snapshots', iter=100, max_writes=10)
-snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=0.01, max_writes=1000, mode=file_handler_mode)
+snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=1, max_writes=1, mode=file_handler_mode)
 snapshots.add_tasks(solver.state, scales=(1,1))
+
+# snapshots = solver.evaluator.add_file_handler('scalars', sim_dt=0.01, max_writes=10000, mode=file_handler_mode)
+# snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
 
 # CFL
 # print('line 124')

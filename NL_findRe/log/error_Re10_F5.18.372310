@@ -1,0 +1,993 @@
+/tmp/slurmd/job372310/slurm_script: line 13: activate: No such file or directory
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 747, in open_file
+    joint_file = h5py.File(str(self.current_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/NL_findRe/Nphi128_Nr256_Re10_F5.18/ivp.py", line 144, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 146, in evaluate_handlers
+    handler.process(**kw)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 585, in process
+    file = self.get_file()
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 503, in get_file
+    return self.open_file(**kw)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 752, in open_file
+    proc_file = h5py.File(str(self.current_process_file), mode)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/h5py/_hl/files.py", line 240, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')

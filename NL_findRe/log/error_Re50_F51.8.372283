@@ -1,0 +1,4 @@
+/tmp/slurmd/job372283/slurm_script: line 13: activate: No such file or directory
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 372283.0 ON c062 CANCELLED AT 2025-07-30T22:46:24 ***
+slurmstepd: error: *** JOB 372283 ON c062 CANCELLED AT 2025-07-30T22:46:24 ***
