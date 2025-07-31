@@ -16,7 +16,7 @@ gamma_dim = 2 * (2 * np.pi / P) / a**2
 L = 1e7 # m
 U = 100 # m/s
 T = L / U # s
-F = 51.8 # = L**2 / Ld**2
+F = 5.18 # = L**2 / Ld**2
 gamma = gamma_dim * L**2 * T
 R = R_dim / L
 
@@ -30,7 +30,7 @@ timestepper = "RK443"
 timestep = 1e-3
 
 max_timestep = 1e-2
-stop_sim_time = 10
+stop_sim_time = 30
 dtype = np.float64
 initv = 1e-3
 dealias = 3/2
@@ -91,6 +91,7 @@ solver.print_subproblem_ranks(solver.subproblems, timestep)
 solver.stop_sim_time = stop_sim_time
 
 # Initial conditions
+
 psi1.fill_random('g', seed=42, distribution='normal', scale=1e-3)
 psi2.fill_random('g', seed=42, distribution='normal', scale=1e-3)
 q1.fill_random('g', seed=42, distribution='normal', scale=1e-3)

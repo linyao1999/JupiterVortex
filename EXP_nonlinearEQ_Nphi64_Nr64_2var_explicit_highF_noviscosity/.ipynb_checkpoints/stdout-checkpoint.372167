@@ -1,0 +1,10 @@
+Creating directory: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi64_Nr64_2var_explicit_highF_noviscosity
+Copying files to: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi64_Nr64_2var_explicit_highF_noviscosity
+Running job at Wed Jul 30 12:11:23 EDT 2025 on c091
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-30 12:11:34,415 subsystems 0/32 INFO :: Building subproblem matrices 1/2 (~50%) Elapsed: 0s, Remaining: 0s, Rate: 3.4e+00/s
+2025-07-30 12:11:34,602 subsystems 0/32 INFO :: Building subproblem matrices 2/2 (~100%) Elapsed: 0s, Remaining: 0s, Rate: 4.2e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 130/130, cond: 5.7e+06
+MPI rank: 0, subproblem: 1, group: (63, None), matrix rank: 136/136, cond: 5.7e+06
+2025-07-30 12:11:45,870 __main__ 0/32 INFO :: Starting main loop

@@ -1,0 +1,160 @@
+Creating directory: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi64_Nr64_2var_explicit_lowF_hyperviscosity
+Copying files to: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi64_Nr64_2var_explicit_lowF_hyperviscosity
+Running job at Wed Jul 30 12:20:04 EDT 2025 on c066
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783gamma = 0.7198176581830783gamma = 0.7198176581830783
+
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495gamma = 0.7198176581830783
+R     = 3.495
+
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+
+R     = 3.495
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+
+
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-30 12:20:27,251 subsystems 0/32 INFO :: Building subproblem matrices 1/2 (~50%) Elapsed: 1s, Remaining: 1s, Rate: 1.2e+00/s
+2025-07-30 12:20:27,672 subsystems 0/32 INFO :: Building subproblem matrices 2/2 (~100%) Elapsed: 1s, Remaining: 0s, Rate: 1.6e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 260/260, cond: 9.3e+06
+MPI rank: 0, subproblem: 1, group: (63, None), matrix rank: 272/272, cond: 5.5e+06
+MPI rank: 4, subproblem: 0, group: (4, None), matrix rank: 504/504, cond: 9.3e+06
+MPI rank: 1, subproblem: 0, group: (1, None), matrix rank: 520/520, cond: 9.7e+06
+MPI rank: 30, subproblem: 0, group: (30, None), matrix rank: 400/400, cond: 8.3e+06MPI rank: 29, subproblem: 0, group: (29, None), matrix rank: 408/408, cond: 8.7e+06MPI rank: 31, subproblem: 0, group: (31, None), matrix rank: 400/400, cond: 8.5e+06
+
+
+MPI rank: 26, subproblem: 0, group: (26, None), matrix rank: 416/416, cond: 8.5e+06MPI rank: 1, subproblem: 1, group: (62, None), matrix rank: 272/272, cond: 5.4e+06
+MPI rank: 4, subproblem: 1, group: (59, None), matrix rank: 288/288, cond: 6.0e+06
+MPI rank: 28, subproblem: 0, group: (28, None), matrix rank: 408/408, cond: 8.4e+06
+MPI rank: 24, subproblem: 0, group: (24, None), matrix rank: 424/424, cond: 8.7e+06
+
+MPI rank: 21, subproblem: 0, group: (21, None), matrix rank: 440/440, cond: 9.1e+06
+MPI rank: 22, subproblem: 0, group: (22, None), matrix rank: 432/432, cond: 8.8e+06MPI rank: 25, subproblem: 0, group: (25, None), matrix rank: 424/424, cond: 8.9e+06
+
+MPI rank: 17, subproblem: 0, group: (17, None), matrix rank: 456/456, cond: 9.3e+06MPI rank: 20, subproblem: 0, group: (20, None), matrix rank: 440/440, cond: 8.9e+06
+MPI rank: 15, subproblem: 0, group: (15, None), matrix rank: 464/464, cond: 9.4e+06
+MPI rank: 18, subproblem: 0, group: (18, None), matrix rank: 448/448, cond: 8.9e+06
+
+MPI rank: 13, subproblem: 0, group: (13, None), matrix rank: 472/472, cond: 9.4e+06MPI rank: 16, subproblem: 0, group: (16, None), matrix rank: 456/456, cond: 9.0e+06MPI rank: 19, subproblem: 0, group: (19, None), matrix rank: 448/448, cond: 9.2e+06
+MPI rank: 10, subproblem: 0, group: (10, None), matrix rank: 480/480, cond: 9.2e+06MPI rank: 14, subproblem: 0, group: (14, None), matrix rank: 464/464, cond: 9.1e+06
+
+MPI rank: 12, subproblem: 0, group: (12, None), matrix rank: 472/472, cond: 9.2e+06
+
+MPI rank: 6, subproblem: 0, group: (6, None), matrix rank: 496/496, cond: 9.3e+06
+MPI rank: 11, subproblem: 0, group: (11, None), matrix rank: 480/480, cond: 9.5e+06MPI rank: 9, subproblem: 0, group: (9, None), matrix rank: 488/488, cond: 9.6e+06
+MPI rank: 27, subproblem: 0, group: (27, None), matrix rank: 416/416, cond: 8.8e+06
+MPI rank: 21, subproblem: 1, group: (42, None), matrix rank: 352/352, cond: 7.4e+06
+MPI rank: 8, subproblem: 0, group: (8, None), matrix rank: 488/488, cond: 9.2e+06
+
+MPI rank: 29, subproblem: 1, group: (34, None), matrix rank: 384/384, cond: 8.0e+06MPI rank: 23, subproblem: 0, group: (23, None), matrix rank: 432/432, cond: 9.0e+06
+MPI rank: 15, subproblem: 1, group: (48, None), matrix rank: 328/328, cond: 6.9e+06MPI rank: 7, subproblem: 0, group: (7, None), matrix rank: 496/496, cond: 9.6e+06
+MPI rank: 26, subproblem: 1, group: (37, None), matrix rank: 376/376, cond: 8.1e+06
+
+
+MPI rank: 17, subproblem: 1, group: (46, None), matrix rank: 336/336, cond: 7.1e+06
+MPI rank: 22, subproblem: 1, group: (41, None), matrix rank: 360/360, cond: 7.8e+06MPI rank: 31, subproblem: 1, group: (32, None), matrix rank: 392/392, cond: 8.2e+06MPI rank: 2, subproblem: 0, group: (2, None), matrix rank: 512/512, cond: 9.3e+06
+MPI rank: 30, subproblem: 1, group: (33, None), matrix rank: 392/392, cond: 8.4e+06
+
+MPI rank: 3, subproblem: 0, group: (3, None), matrix rank: 512/512, cond: 9.6e+06
+MPI rank: 18, subproblem: 1, group: (45, None), matrix rank: 344/344, cond: 7.4e+06
+MPI rank: 25, subproblem: 1, group: (38, None), matrix rank: 368/368, cond: 7.8e+06MPI rank: 13, subproblem: 1, group: (50, None), matrix rank: 320/320, cond: 6.7e+06
+MPI rank: 24, subproblem: 1, group: (39, None), matrix rank: 368/368, cond: 8.0e+06
+MPI rank: 14, subproblem: 1, group: (49, None), matrix rank: 328/328, cond: 7.1e+06
+MPI rank: 6, subproblem: 1, group: (57, None), matrix rank: 296/296, cond: 6.2e+06MPI rank: 20, subproblem: 1, group: (43, None), matrix rank: 352/352, cond: 7.6e+06
+
+
+MPI rank: 12, subproblem: 1, group: (51, None), matrix rank: 320/320, cond: 6.9e+06MPI rank: 28, subproblem: 1, group: (35, None), matrix rank: 384/384, cond: 8.3e+06MPI rank: 10, subproblem: 1, group: (53, None), matrix rank: 312/312, cond: 6.6e+06
+
+
+MPI rank: 19, subproblem: 1, group: (44, None), matrix rank: 344/344, cond: 7.3e+06
+
+
+MPI rank: 16, subproblem: 1, group: (47, None), matrix rank: 336/336, cond: 7.2e+06
+MPI rank: 2, subproblem: 1, group: (61, None), matrix rank: 280/280, cond: 5.8e+06MPI rank: 9, subproblem: 1, group: (54, None), matrix rank: 304/304, cond: 6.3e+06
+MPI rank: 8, subproblem: 1, group: (55, None), matrix rank: 304/304, cond: 6.4e+06
+MPI rank: 11, subproblem: 1, group: (52, None), matrix rank: 312/312, cond: 6.5e+06
+MPI rank: 3, subproblem: 1, group: (60, None), matrix rank: 280/280, cond: 5.6e+06MPI rank: 7, subproblem: 1, group: (56, None), matrix rank: 296/296, cond: 6.1e+06
+
+
+MPI rank: 23, subproblem: 1, group: (40, None), matrix rank: 360/360, cond: 7.6e+06MPI rank: 27, subproblem: 1, group: (36, None), matrix rank: 376/376, cond: 7.9e+06
+
+MPI rank: 5, subproblem: 0, group: (5, None), matrix rank: 504/504, cond: 9.6e+06
+MPI rank: 5, subproblem: 1, group: (58, None), matrix rank: 288/288, cond: 5.9e+06
+2025-07-30 12:21:17,594 __main__ 0/32 INFO :: Starting main loop
+2025-07-30 12:22:07,021 __main__ 0/32 INFO :: Iteration=1, Time=1.000000e-03, dt=1.000000e-03, max(KE)=3.954e-08
+2025-07-30 12:22:07,664 __main__ 0/32 INFO :: Iteration=11, Time=1.100000e-02, dt=1.000000e-03, max(KE)=4.959e-08
+2025-07-30 12:22:08,050 __main__ 0/32 INFO :: Iteration=21, Time=2.100000e-02, dt=1.000000e-03, max(KE)=4.930e-08
+2025-07-30 12:22:08,448 __main__ 0/32 INFO :: Iteration=31, Time=3.100000e-02, dt=1.000000e-03, max(KE)=4.884e-08
+2025-07-30 12:22:09,236 __main__ 0/32 INFO :: Iteration=41, Time=4.100000e-02, dt=1.000000e-03, max(KE)=4.822e-08
+2025-07-30 12:22:10,098 __main__ 0/32 INFO :: Iteration=51, Time=5.100000e-02, dt=1.000000e-03, max(KE)=4.745e-08
+2025-07-30 12:22:11,093 __main__ 0/32 INFO :: Iteration=61, Time=6.100000e-02, dt=1.000000e-03, max(KE)=4.654e-08
+2025-07-30 12:22:11,915 __main__ 0/32 INFO :: Iteration=71, Time=7.100000e-02, dt=1.000000e-03, max(KE)=4.549e-08
+2025-07-30 12:22:12,525 __main__ 0/32 INFO :: Iteration=81, Time=8.100000e-02, dt=1.000000e-03, max(KE)=4.433e-08
+2025-07-30 12:22:13,089 __main__ 0/32 INFO :: Iteration=91, Time=9.100000e-02, dt=1.000000e-03, max(KE)=4.308e-08
+2025-07-30 12:22:14,211 __main__ 0/32 INFO :: Iteration=101, Time=1.010000e-01, dt=1.000000e-03, max(KE)=4.181e-08
+2025-07-30 12:22:15,110 __main__ 0/32 INFO :: Iteration=111, Time=1.110000e-01, dt=1.000000e-03, max(KE)=4.055e-08
+2025-07-30 12:22:15,419 __main__ 0/32 INFO :: Iteration=121, Time=1.210000e-01, dt=1.000000e-03, max(KE)=3.924e-08
+2025-07-30 12:22:15,835 __main__ 0/32 INFO :: Iteration=131, Time=1.310000e-01, dt=1.000000e-03, max(KE)=3.796e-08
+2025-07-30 12:22:16,074 __main__ 0/32 INFO :: Iteration=141, Time=1.410000e-01, dt=1.000000e-03, max(KE)=3.721e-08
+2025-07-30 12:22:16,270 __main__ 0/32 INFO :: Iteration=151, Time=1.510000e-01, dt=1.000000e-03, max(KE)=3.656e-08
+2025-07-30 12:22:16,504 __main__ 0/32 INFO :: Iteration=161, Time=1.610000e-01, dt=1.000000e-03, max(KE)=3.588e-08
+2025-07-30 12:22:16,999 __main__ 0/32 INFO :: Iteration=171, Time=1.710000e-01, dt=1.000000e-03, max(KE)=3.522e-08
+2025-07-30 12:22:17,266 __main__ 0/32 INFO :: Iteration=181, Time=1.810000e-01, dt=1.000000e-03, max(KE)=3.450e-08
+2025-07-30 12:22:18,108 __main__ 0/32 INFO :: Iteration=191, Time=1.910000e-01, dt=1.000000e-03, max(KE)=3.372e-08
+2025-07-30 12:22:19,038 __main__ 0/32 INFO :: Iteration=201, Time=2.010000e-01, dt=1.000000e-03, max(KE)=3.290e-08
+2025-07-30 12:22:19,425 __main__ 0/32 INFO :: Iteration=211, Time=2.110000e-01, dt=1.000000e-03, max(KE)=3.202e-08
+2025-07-30 12:22:20,090 __main__ 0/32 INFO :: Iteration=221, Time=2.210000e-01, dt=1.000000e-03, max(KE)=3.129e-08
+2025-07-30 12:22:20,889 __main__ 0/32 INFO :: Iteration=231, Time=2.310000e-01, dt=1.000000e-03, max(KE)=3.174e-08
+2025-07-30 12:22:21,447 __main__ 0/32 INFO :: Iteration=241, Time=2.410000e-01, dt=1.000000e-03, max(KE)=3.229e-08
+2025-07-30 12:22:22,338 __main__ 0/32 INFO :: Iteration=251, Time=2.510000e-01, dt=1.000000e-03, max(KE)=3.287e-08

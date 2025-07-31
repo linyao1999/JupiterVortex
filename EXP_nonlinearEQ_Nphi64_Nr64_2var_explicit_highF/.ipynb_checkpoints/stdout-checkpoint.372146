@@ -1,0 +1,37 @@
+Creating directory: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF
+Copying files to: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF
+Running job at Wed Jul 30 09:30:51 EDT 2025 on c067
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-30 09:31:00,556 subsystems 0/32 INFO :: Building subproblem matrices 1/4 (~25%) Elapsed: 1s, Remaining: 2s, Rate: 2.0e+00/s
+2025-07-30 09:31:00,868 subsystems 0/32 INFO :: Building subproblem matrices 2/4 (~50%) Elapsed: 1s, Remaining: 1s, Rate: 2.5e+00/s
+2025-07-30 09:31:01,359 subsystems 0/32 INFO :: Building subproblem matrices 3/4 (~75%) Elapsed: 1s, Remaining: 0s, Rate: 2.3e+00/s
+2025-07-30 09:31:01,664 subsystems 0/32 INFO :: Building subproblem matrices 4/4 (~100%) Elapsed: 2s, Remaining: 0s, Rate: 2.5e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 258/260, cond: 1.6e+17
+MPI rank: 0, subproblem: 1, group: (127, None), matrix rank: 264/268, cond: 4.1e+16
+MPI rank: 0, subproblem: 2, group: (1, None), matrix rank: 516/520, cond: 1.6e+17
+MPI rank: 0, subproblem: 3, group: (126, None), matrix rank: 264/268, cond: 4.0e+16
+2025-07-30 09:31:02,183 __main__ 0/32 INFO :: Starting main loop
+2025-07-30 09:31:04,057 __main__ 0/32 INFO :: Iteration=1, Time=1.000000e-03, dt=1.000000e-03, max(KE)=2.354e-03
+2025-07-30 09:31:07,835 __main__ 0/32 INFO :: Iteration=11, Time=1.100000e-02, dt=1.000000e-03, max(KE)=7.203e-02
+2025-07-30 09:31:12,619 __main__ 0/32 INFO :: Iteration=21, Time=2.100000e-02, dt=1.000000e-03, max(KE)=6.880e-02
+2025-07-30 09:31:15,133 __main__ 0/32 INFO :: Iteration=31, Time=3.100000e-02, dt=1.000000e-03, max(KE)=6.375e-02
+2025-07-30 09:31:17,416 __main__ 0/32 INFO :: Iteration=41, Time=4.100000e-02, dt=1.000000e-03, max(KE)=5.734e-02
+2025-07-30 09:31:20,765 __main__ 0/32 INFO :: Iteration=51, Time=5.100000e-02, dt=1.000000e-03, max(KE)=5.320e-02
+2025-07-30 09:31:23,759 __main__ 0/32 INFO :: Iteration=61, Time=6.100000e-02, dt=1.000000e-03, max(KE)=5.317e-02
+2025-07-30 09:31:26,450 __main__ 0/32 INFO :: Iteration=71, Time=7.100000e-02, dt=1.000000e-03, max(KE)=5.314e-02
+2025-07-30 09:31:30,595 __main__ 0/32 INFO :: Iteration=81, Time=8.100000e-02, dt=1.000000e-03, max(KE)=5.309e-02
+2025-07-30 09:31:34,211 __main__ 0/32 INFO :: Iteration=91, Time=9.100000e-02, dt=1.000000e-03, max(KE)=5.355e-02
+2025-07-30 09:31:37,575 __main__ 0/32 INFO :: Iteration=101, Time=1.010000e-01, dt=1.000000e-03, max(KE)=5.300e-02
+2025-07-30 09:31:41,369 __main__ 0/32 INFO :: Iteration=111, Time=1.110000e-01, dt=1.000000e-03, max(KE)=5.295e-02
+2025-07-30 09:31:45,026 __main__ 0/32 INFO :: Iteration=121, Time=1.210000e-01, dt=1.000000e-03, max(KE)=5.290e-02
+2025-07-30 09:31:47,579 __main__ 0/32 INFO :: Iteration=131, Time=1.310000e-01, dt=1.000000e-03, max(KE)=5.285e-02
+2025-07-30 09:31:51,624 __main__ 0/32 INFO :: Iteration=141, Time=1.410000e-01, dt=1.000000e-03, max(KE)=5.278e-02
+2025-07-30 09:31:55,500 __main__ 0/32 INFO :: Iteration=151, Time=1.510000e-01, dt=1.000000e-03, max(KE)=5.271e-02
+2025-07-30 09:31:58,685 __main__ 0/32 INFO :: Iteration=161, Time=1.610000e-01, dt=1.000000e-03, max(KE)=5.263e-02
+2025-07-30 09:32:02,372 __main__ 0/32 INFO :: Iteration=171, Time=1.710000e-01, dt=1.000000e-03, max(KE)=5.255e-02
+2025-07-30 09:32:05,624 __main__ 0/32 INFO :: Iteration=181, Time=1.810000e-01, dt=1.000000e-03, max(KE)=5.245e-02
+2025-07-30 09:32:09,058 __main__ 0/32 INFO :: Iteration=191, Time=1.910000e-01, dt=1.000000e-03, max(KE)=5.236e-02
+2025-07-30 09:32:12,526 __main__ 0/32 INFO :: Iteration=201, Time=2.010000e-01, dt=1.000000e-03, max(KE)=5.227e-02
+2025-07-30 09:32:16,933 __main__ 0/32 INFO :: Iteration=211, Time=2.110000e-01, dt=1.000000e-03, max(KE)=5.217e-02
+2025-07-30 09:32:20,366 __main__ 0/32 INFO :: Iteration=221, Time=2.210000e-01, dt=1.000000e-03, max(KE)=5.206e-02

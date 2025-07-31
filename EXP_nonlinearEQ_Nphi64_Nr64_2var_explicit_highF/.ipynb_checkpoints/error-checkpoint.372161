@@ -1,0 +1,929 @@
+/tmp/slurmd/job372161/slurm_script: line 13: activate: No such file or directory
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+Traceback (most recent call last):
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+Traceback (most recent call last):
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+Traceback (most recent call last):
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,2,64) (2,4,64) 
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF/ivp.py", line 129, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 107, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 168, in evaluate
+    a_eval = a.evaluate(id=id, force=force)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/arithmetic.py", line 251, in operate
+    np.add(arg0.data, arg1.data, out=out.data)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (2,4,64) (2,0,64) (2,4,64) 

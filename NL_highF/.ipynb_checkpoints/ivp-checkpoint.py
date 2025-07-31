@@ -24,17 +24,17 @@ print(f"gamma = {gamma}")
 print(f"R     = {R}")
 
 # Numerical parameters
-Nphi = 128
-Nr = 64
+Nphi = 512
+Nr = 1024
 timestepper = "RK443"
-timestep = 1e-3
+timestep = 1e-4
 
 max_timestep = 1e-2
-stop_sim_time = 10
+stop_sim_time = 5
 dtype = np.float64
 initv = 1e-3
 dealias = 3/2
-nu = 1e-11
+nu = 0.1
 
 # Bases
 coords = d3.PolarCoordinates('phi', 'r')
@@ -52,6 +52,8 @@ tau_q1 = dist.Field(name='tau_q1', bases=disk.edge)
 tau_q2 = dist.Field(name='tau_q2', bases=disk.edge)
 tau_q3 = dist.Field(name='tau_q3', bases=disk.edge)
 tau_q4 = dist.Field(name='tau_q4', bases=disk.edge)
+
+tau_bc = dist.Field(name='tau_bc')  # force the integ(psi1 - psi2) = 0; internal energy is conserved
 
 # Substitutions
 psi2u = lambda A: d3.Skew(d3.Gradient(A))
@@ -73,17 +75,18 @@ U1 = psi2u(Psi1)
 U2 = psi2u(Psi2)
 
 # Problem
-problem = d3.IVP([psi1, psi2, q1, q2, tau_q1, tau_q2, tau_q3, tau_q4], namespace=locals())
+problem = d3.IVP([psi1, psi2, q1, q2, tau_q1, tau_q2, tau_q3, tau_q4, tau_bc], namespace=locals())
 
 problem.add_equation("q1 - (lap(psi1) - F * (psi1 - psi2)) + lift(tau_q1,-1)= 0")
 problem.add_equation("q2 - (lap(psi2) + F * (psi1 - psi2)) + lift(tau_q2,-1)= 0")
 problem.add_equation("dt(q1) - nu*lap(q1) + u1@grad(Q1) + lift(tau_q3,-1) = -(U1@grad(q1) + u1@grad(q1))")
 problem.add_equation("dt(q2) - nu*lap(q2) + u2@grad(Q2) + lift(tau_q4,-1) = -(U2@grad(q2) + u2@grad(q2))")
 
-problem.add_equation("psi1(r=R) = 0")
-problem.add_equation("psi2(r=R) = 0")
+problem.add_equation("psi1(r=R) + tau_bc = 0")
+problem.add_equation("psi2(r=R) - tau_bc = 0")
 problem.add_equation("q1(r=R) = 0")
 problem.add_equation("q2(r=R) = 0")
+problem.add_equation("integ(psi1 - psi2) = 0")
 
 # Solver
 solver = problem.build_solver(timestepper)
@@ -109,6 +112,7 @@ psi2['g'] *= initv
 # snapshots = solver.evaluator.add_file_handler('snapshots', iter=100, max_writes=10)
 snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=0.01, max_writes=1000)
 snapshots.add_tasks(solver.state, scales=(1,1))
+# snapshots.add_tasks(u1, scales=(1,1))
 
 # # CFL
 # CFL = d3.CFL(solver, initial_dt=max_timestep, cadence=10, safety=0.2, threshold=0.1,

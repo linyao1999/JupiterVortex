@@ -1,0 +1,73 @@
+Creating directory: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/NL_highF
+Copying files to: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/NL_highF
+Running job at Wed Jul 30 17:27:15 EDT 2025 on c075
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+
+R     = 3.495gamma = 0.7198176581830783
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+
+gamma = 0.7198176581830783
+R     = 3.495
+R     = 3.495
+gamma = 0.7198176581830783
+gamma = 0.7198176581830783R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+gamma = 0.7198176581830783gamma = 0.7198176581830783
+R     = 3.495
+
+R     = 3.495
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-30 17:28:57,135 subsystems 0/32 INFO :: Building subproblem matrices 1/8 (~12%) Elapsed: 1m 36s, Remaining: 11m 12s, Rate: 1.0e-02/s
+2025-07-30 17:30:06,363 subsystems 0/32 INFO :: Building subproblem matrices 2/8 (~25%) Elapsed: 2m 45s, Remaining: 8m 16s, Rate: 1.2e-02/s
+2025-07-30 17:31:42,086 subsystems 0/32 INFO :: Building subproblem matrices 3/8 (~38%) Elapsed: 4m 21s, Remaining: 7m 15s, Rate: 1.1e-02/s
+2025-07-30 17:33:00,143 subsystems 0/32 INFO :: Building subproblem matrices 4/8 (~50%) Elapsed: 5m 39s, Remaining: 5m 39s, Rate: 1.2e-02/s
+2025-07-30 17:35:09,220 subsystems 0/32 INFO :: Building subproblem matrices 5/8 (~62%) Elapsed: 7m 48s, Remaining: 4m 41s, Rate: 1.1e-02/s
+2025-07-30 17:36:36,347 subsystems 0/32 INFO :: Building subproblem matrices 6/8 (~75%) Elapsed: 9m 15s, Remaining: 3m 05s, Rate: 1.1e-02/s

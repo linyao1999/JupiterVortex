@@ -1,0 +1,236 @@
+Creating directory: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF
+Copying files to: /home/linyao/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF
+Running job at Wed Jul 30 10:18:24 EDT 2025 on c067
+gamma = 0.7198176581830783
+R     = 3.495
+2025-07-30 10:18:31,528 subsystems 0/32 INFO :: Building subproblem matrices 1/4 (~25%) Elapsed: 1s, Remaining: 2s, Rate: 1.9e+00/s
+2025-07-30 10:18:31,844 subsystems 0/32 INFO :: Building subproblem matrices 2/4 (~50%) Elapsed: 1s, Remaining: 1s, Rate: 2.4e+00/s
+2025-07-30 10:18:32,367 subsystems 0/32 INFO :: Building subproblem matrices 3/4 (~75%) Elapsed: 1s, Remaining: 0s, Rate: 2.2e+00/s
+2025-07-30 10:18:32,675 subsystems 0/32 INFO :: Building subproblem matrices 4/4 (~100%) Elapsed: 2s, Remaining: 0s, Rate: 2.4e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 257/260, cond: 2.3e+29
+MPI rank: 0, subproblem: 1, group: (127, None), matrix rank: 262/268, cond: 4.1e+16
+MPI rank: 0, subproblem: 2, group: (1, None), matrix rank: 512/520, cond: 2.3e+18
+MPI rank: 0, subproblem: 3, group: (126, None), matrix rank: 262/268, cond: 4.0e+16
+2025-07-30 10:18:33,050 __main__ 0/32 INFO :: Starting main loop
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 12, subproblem: 0, group: (24, None), matrix rank: 464/472, cond: 1.5e+17
+MPI rank: 12, subproblem: 1, group: (103, None), matrix rank: 310/316, cond: 6.8e+16
+MPI rank: 12, subproblem: 2, group: (25, None), matrix rank: 464/472, cond: 1.5e+17
+MPI rank: 12, subproblem: 3, group: (102, None), matrix rank: 310/316, cond: 6.7e+16
+2025-07-30 10:18:33,218 __main__ 12/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 8, subproblem: 0, group: (16, None), matrix rank: 480/488, cond: 1.5e+17
+MPI rank: 8, subproblem: 1, group: (111, None), matrix rank: 294/300, cond: 5.9e+16
+MPI rank: 8, subproblem: 2, group: (17, None), matrix rank: 480/488, cond: 1.6e+17
+MPI rank: 8, subproblem: 3, group: (110, None), matrix rank: 294/300, cond: 5.7e+16
+2025-07-30 10:18:33,218 __main__ 8/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 10, subproblem: 0, group: (20, None), matrix rank: 472/480, cond: 1.5e+17
+MPI rank: 10, subproblem: 1, group: (107, None), matrix rank: 302/308, cond: 6.3e+16
+MPI rank: 10, subproblem: 2, group: (21, None), matrix rank: 472/480, cond: 1.6e+17
+MPI rank: 10, subproblem: 3, group: (106, None), matrix rank: 302/308, cond: 6.2e+16
+2025-07-30 10:18:33,218 __main__ 10/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 9, subproblem: 0, group: (18, None), matrix rank: 476/484, cond: 1.5e+17
+MPI rank: 9, subproblem: 1, group: (109, None), matrix rank: 298/304, cond: 6.1e+16
+MPI rank: 9, subproblem: 2, group: (19, None), matrix rank: 476/484, cond: 1.6e+17
+MPI rank: 9, subproblem: 3, group: (108, None), matrix rank: 298/304, cond: 5.9e+16
+2025-07-30 10:18:33,218 __main__ 9/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 21, subproblem: 0, group: (42, None), matrix rank: 428/436, cond: 1.4e+17
+MPI rank: 21, subproblem: 1, group: (85, None), matrix rank: 346/352, cond: 9.1e+16
+MPI rank: 21, subproblem: 2, group: (43, None), matrix rank: 428/436, cond: 1.4e+17
+MPI rank: 21, subproblem: 3, group: (84, None), matrix rank: 346/352, cond: 8.9e+16
+2025-07-30 10:18:33,218 __main__ 21/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 5, subproblem: 0, group: (10, None), matrix rank: 492/500, cond: 1.7e+17
+MPI rank: 5, subproblem: 1, group: (117, None), matrix rank: 282/288, cond: 5.2e+16
+MPI rank: 5, subproblem: 2, group: (11, None), matrix rank: 492/500, cond: 1.6e+17
+MPI rank: 5, subproblem: 3, group: (116, None), matrix rank: 282/288, cond: 5.0e+16
+2025-07-30 10:18:33,218 __main__ 5/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 2, subproblem: 0, group: (4, None), matrix rank: 504/512, cond: 5.0e+17
+MPI rank: 2, subproblem: 1, group: (123, None), matrix rank: 270/276, cond: 4.5e+16
+MPI rank: 2, subproblem: 2, group: (5, None), matrix rank: 504/512, cond: 3.8e+17
+MPI rank: 2, subproblem: 3, group: (122, None), matrix rank: 270/276, cond: 4.4e+16
+2025-07-30 10:18:33,218 __main__ 2/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 3, subproblem: 0, group: (6, None), matrix rank: 500/508, cond: 2.9e+17
+MPI rank: 3, subproblem: 1, group: (121, None), matrix rank: 274/280, cond: 4.7e+16
+MPI rank: 3, subproblem: 2, group: (7, None), matrix rank: 500/508, cond: 2.5e+17
+MPI rank: 3, subproblem: 3, group: (120, None), matrix rank: 274/280, cond: 4.6e+16
+2025-07-30 10:18:33,218 __main__ 3/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 15, subproblem: 0, group: (30, None), matrix rank: 452/460, cond: 1.5e+17
+MPI rank: 15, subproblem: 1, group: (97, None), matrix rank: 322/328, cond: 7.6e+16
+MPI rank: 15, subproblem: 2, group: (31, None), matrix rank: 452/460, cond: 1.5e+17
+MPI rank: 15, subproblem: 3, group: (96, None), matrix rank: 322/328, cond: 7.4e+16
+2025-07-30 10:18:33,218 __main__ 15/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 22, subproblem: 0, group: (44, None), matrix rank: 424/432, cond: 1.3e+17
+MPI rank: 22, subproblem: 1, group: (83, None), matrix rank: 350/356, cond: 9.4e+16
+MPI rank: 22, subproblem: 2, group: (45, None), matrix rank: 424/432, cond: 1.4e+17
+MPI rank: 22, subproblem: 3, group: (82, None), matrix rank: 350/356, cond: 9.2e+16
+2025-07-30 10:18:33,218 __main__ 22/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 23, subproblem: 0, group: (46, None), matrix rank: 420/428, cond: 1.3e+17
+MPI rank: 23, subproblem: 1, group: (81, None), matrix rank: 354/360, cond: 9.7e+16
+MPI rank: 23, subproblem: 2, group: (47, None), matrix rank: 420/428, cond: 1.4e+17
+MPI rank: 23, subproblem: 3, group: (80, None), matrix rank: 354/360, cond: 9.4e+16
+2025-07-30 10:18:33,218 __main__ 23/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 13, subproblem: 0, group: (26, None), matrix rank: 460/468, cond: 1.5e+17
+MPI rank: 13, subproblem: 1, group: (101, None), matrix rank: 314/320, cond: 7.1e+16
+MPI rank: 13, subproblem: 2, group: (27, None), matrix rank: 460/468, cond: 1.5e+17
+MPI rank: 13, subproblem: 3, group: (100, None), matrix rank: 314/320, cond: 6.9e+16
+2025-07-30 10:18:33,218 __main__ 13/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 1, subproblem: 0, group: (2, None), matrix rank: 508/516, cond: 1.1e+18
+MPI rank: 1, subproblem: 1, group: (125, None), matrix rank: 266/272, cond: 4.3e+16
+MPI rank: 1, subproblem: 2, group: (3, None), matrix rank: 508/516, cond: 7.2e+17
+MPI rank: 1, subproblem: 3, group: (124, None), matrix rank: 266/272, cond: 4.2e+16
+2025-07-30 10:18:33,219 __main__ 1/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 26, subproblem: 0, group: (52, None), matrix rank: 408/416, cond: 1.3e+17
+MPI rank: 26, subproblem: 1, group: (75, None), matrix rank: 366/372, cond: 1.0e+17
+MPI rank: 26, subproblem: 2, group: (53, None), matrix rank: 408/416, cond: 1.3e+17
+MPI rank: 26, subproblem: 3, group: (74, None), matrix rank: 366/372, cond: 1.0e+17
+2025-07-30 10:18:33,219 __main__ 26/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 25, subproblem: 0, group: (50, None), matrix rank: 412/420, cond: 1.3e+17
+MPI rank: 25, subproblem: 1, group: (77, None), matrix rank: 362/368, cond: 1.0e+17
+MPI rank: 25, subproblem: 2, group: (51, None), matrix rank: 412/420, cond: 1.3e+17
+MPI rank: 25, subproblem: 3, group: (76, None), matrix rank: 362/368, cond: 9.9e+16
+2025-07-30 10:18:33,219 __main__ 25/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 11, subproblem: 0, group: (22, None), matrix rank: 468/476, cond: 1.5e+17
+MPI rank: 11, subproblem: 1, group: (105, None), matrix rank: 306/312, cond: 6.6e+16
+MPI rank: 11, subproblem: 2, group: (23, None), matrix rank: 468/476, cond: 1.6e+17
+MPI rank: 11, subproblem: 3, group: (104, None), matrix rank: 306/312, cond: 6.4e+16
+2025-07-30 10:18:33,219 __main__ 11/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 14, subproblem: 0, group: (28, None), matrix rank: 456/464, cond: 1.5e+17
+MPI rank: 14, subproblem: 1, group: (99, None), matrix rank: 318/324, cond: 7.3e+16
+MPI rank: 14, subproblem: 2, group: (29, None), matrix rank: 456/464, cond: 1.5e+17
+MPI rank: 14, subproblem: 3, group: (98, None), matrix rank: 318/324, cond: 7.2e+16
+2025-07-30 10:18:33,219 __main__ 14/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 6, subproblem: 0, group: (12, None), matrix rank: 488/496, cond: 1.5e+17
+MPI rank: 6, subproblem: 1, group: (115, None), matrix rank: 286/292, cond: 5.4e+16
+MPI rank: 6, subproblem: 2, group: (13, None), matrix rank: 488/496, cond: 1.6e+17
+MPI rank: 6, subproblem: 3, group: (114, None), matrix rank: 286/292, cond: 5.3e+16
+2025-07-30 10:18:33,219 __main__ 6/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 17, subproblem: 0, group: (34, None), matrix rank: 444/452, cond: 1.4e+17
+MPI rank: 17, subproblem: 1, group: (93, None), matrix rank: 330/336, cond: 8.1e+16
+MPI rank: 17, subproblem: 2, group: (35, None), matrix rank: 444/452, cond: 1.5e+17
+MPI rank: 17, subproblem: 3, group: (92, None), matrix rank: 330/336, cond: 7.9e+16
+2025-07-30 10:18:33,219 __main__ 17/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 31, subproblem: 0, group: (62, None), matrix rank: 390/396, cond: 1.2e+17
+MPI rank: 31, subproblem: 1, group: (65, None), matrix rank: 386/392, cond: 1.2e+17
+MPI rank: 31, subproblem: 2, group: (63, None), matrix rank: 390/396, cond: 1.2e+17
+MPI rank: 31, subproblem: 3, group: (64, None), matrix rank: 386/392, cond: 1.1e+17
+2025-07-30 10:18:33,220 __main__ 31/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 19, subproblem: 0, group: (38, None), matrix rank: 436/444, cond: 1.4e+17
+MPI rank: 19, subproblem: 1, group: (89, None), matrix rank: 338/344, cond: 8.6e+16
+MPI rank: 19, subproblem: 2, group: (39, None), matrix rank: 436/444, cond: 1.4e+17
+MPI rank: 19, subproblem: 3, group: (88, None), matrix rank: 338/344, cond: 8.4e+16
+2025-07-30 10:18:33,220 __main__ 19/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 24, subproblem: 0, group: (48, None), matrix rank: 416/424, cond: 1.3e+17
+MPI rank: 24, subproblem: 1, group: (79, None), matrix rank: 358/364, cond: 9.9e+16
+MPI rank: 24, subproblem: 2, group: (49, None), matrix rank: 416/424, cond: 1.3e+17
+MPI rank: 24, subproblem: 3, group: (78, None), matrix rank: 358/364, cond: 9.7e+16
+2025-07-30 10:18:33,220 __main__ 24/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 18, subproblem: 0, group: (36, None), matrix rank: 440/448, cond: 1.4e+17
+MPI rank: 18, subproblem: 1, group: (91, None), matrix rank: 334/340, cond: 8.4e+16
+MPI rank: 18, subproblem: 2, group: (37, None), matrix rank: 440/448, cond: 1.5e+17
+MPI rank: 18, subproblem: 3, group: (90, None), matrix rank: 334/340, cond: 8.1e+16
+2025-07-30 10:18:33,220 __main__ 18/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 16, subproblem: 0, group: (32, None), matrix rank: 448/456, cond: 1.4e+17
+MPI rank: 16, subproblem: 1, group: (95, None), matrix rank: 326/332, cond: 7.9e+16
+MPI rank: 16, subproblem: 2, group: (33, None), matrix rank: 448/456, cond: 1.5e+17
+MPI rank: 16, subproblem: 3, group: (94, None), matrix rank: 326/332, cond: 7.6e+16
+2025-07-30 10:18:33,220 __main__ 16/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 29, subproblem: 0, group: (58, None), matrix rank: 398/404, cond: 1.2e+17
+MPI rank: 29, subproblem: 1, group: (69, None), matrix rank: 378/384, cond: 1.1e+17
+MPI rank: 29, subproblem: 2, group: (59, None), matrix rank: 398/404, cond: 1.2e+17
+MPI rank: 29, subproblem: 3, group: (68, None), matrix rank: 378/384, cond: 1.1e+17
+2025-07-30 10:18:33,220 __main__ 29/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 28, subproblem: 0, group: (56, None), matrix rank: 402/408, cond: 1.2e+17
+MPI rank: 28, subproblem: 1, group: (71, None), matrix rank: 374/380, cond: 1.1e+17
+MPI rank: 28, subproblem: 2, group: (57, None), matrix rank: 400/408, cond: 1.3e+17
+MPI rank: 28, subproblem: 3, group: (70, None), matrix rank: 374/380, cond: 1.1e+17
+2025-07-30 10:18:33,221 __main__ 28/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 7, subproblem: 0, group: (14, None), matrix rank: 484/492, cond: 1.5e+17
+MPI rank: 7, subproblem: 1, group: (113, None), matrix rank: 290/296, cond: 5.6e+16
+MPI rank: 7, subproblem: 2, group: (15, None), matrix rank: 484/492, cond: 1.6e+17
+MPI rank: 7, subproblem: 3, group: (112, None), matrix rank: 290/296, cond: 5.5e+16
+2025-07-30 10:18:33,221 __main__ 7/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-30 10:18:33,221 __main__ 0/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 27, subproblem: 0, group: (54, None), matrix rank: 406/412, cond: 1.2e+17
+MPI rank: 27, subproblem: 1, group: (73, None), matrix rank: 370/376, cond: 1.1e+17
+MPI rank: 27, subproblem: 2, group: (55, None), matrix rank: 404/412, cond: 1.3e+17
+MPI rank: 27, subproblem: 3, group: (72, None), matrix rank: 370/376, cond: 1.0e+17
+2025-07-30 10:18:33,221 __main__ 27/32 ERROR :: Exception raised, triggering end of main loop.
+2025-07-30 10:18:33,222 solvers 0/32 INFO :: Final iteration: 0
+2025-07-30 10:18:33,222 solvers 0/32 INFO :: Final sim time: 0.0
+2025-07-30 10:18:33,222 solvers 0/32 INFO :: Setup time (init - iter 0): 2.129 sec
+2025-07-30 10:18:33,222 solvers 0/32 INFO :: Timings unavailable because warmup did not complete.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 30, subproblem: 0, group: (60, None), matrix rank: 394/400, cond: 1.2e+17
+MPI rank: 30, subproblem: 1, group: (67, None), matrix rank: 382/388, cond: 1.1e+17
+MPI rank: 30, subproblem: 2, group: (61, None), matrix rank: 394/400, cond: 1.2e+17
+MPI rank: 30, subproblem: 3, group: (66, None), matrix rank: 382/388, cond: 1.1e+17
+2025-07-30 10:18:33,222 __main__ 30/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 20, subproblem: 0, group: (40, None), matrix rank: 432/440, cond: 1.4e+17
+MPI rank: 20, subproblem: 1, group: (87, None), matrix rank: 342/348, cond: 8.9e+16
+MPI rank: 20, subproblem: 2, group: (41, None), matrix rank: 432/440, cond: 1.4e+17
+MPI rank: 20, subproblem: 3, group: (86, None), matrix rank: 342/348, cond: 8.7e+16
+2025-07-30 10:18:33,222 __main__ 20/32 ERROR :: Exception raised, triggering end of main loop.
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 4, subproblem: 0, group: (8, None), matrix rank: 496/504, cond: 2.0e+17
+MPI rank: 4, subproblem: 1, group: (119, None), matrix rank: 278/284, cond: 4.9e+16
+MPI rank: 4, subproblem: 2, group: (9, None), matrix rank: 496/504, cond: 1.9e+17
+MPI rank: 4, subproblem: 3, group: (118, None), matrix rank: 278/284, cond: 4.8e+16
+2025-07-30 10:18:33,228 __main__ 4/32 ERROR :: Exception raised, triggering end of main loop.

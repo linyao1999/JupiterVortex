@@ -1,0 +1,1505 @@
+/tmp/slurmd/job372265/slurm_script: line 13: activate: No such file or directory
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+Traceback (most recent call last):
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+Traceback (most recent call last):
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.
+Traceback (most recent call last):
+  File "/net/fs06/d0/linyao/GFD_Polar_vortex/ddloutput/debug/ivp.py", line 142, in <module>
+    solver.step(timestep)
+    ~~~~~~~~~~~^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/solvers.py", line 703, in step
+    self.timestepper.step(dt, wall_time)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/timesteppers.py", line 608, in step
+    evaluator.evaluate_scheduled(iteration=iteration, wall_time=wall_time, sim_time=solver.sim_time, timestep=dt)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 93, in evaluate_scheduled
+    self.evaluate_handlers(handlers, **kw)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 129, in evaluate_handlers
+    tasks = self.attempt_tasks(tasks, id=id)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/evaluator.py", line 199, in attempt_tasks
+    output = task['operator'].attempt(**kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 226, in attempt
+    return self.evaluate(id=id, force=False)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/future.py", line 196, in evaluate
+    self.operate(out)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/operators.py", line 4404, in operate
+    self.compute_cfl_frequency(arg.data, out.data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6152, in compute_cfl_frequency
+    out += u_theta / self.cfl_spacing()[0]
+                     ~~~~~~~~~~~~~~~~^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 6139, in cfl_spacing
+    azimuth_spacing = basis.local_grid_spacing(self.dist, 0, scales=dealias)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1960, in local_grid_spacing
+    global_spacing = self.global_grid_spacing(dist, subaxis, scales=scales)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/tools/cache.py", line 86, in __call__
+    result = self.function(*args, **kw)
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/dedalus/core/basis.py", line 1954, in global_grid_spacing
+    return np.gradient(self.global_grids(dist, scales=scales)[subaxis], axis=axis, edge_order=2)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linyao/.conda/envs/dedalus3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py", line 1289, in gradient
+    raise ValueError(
+        "Shape of array too small to calculate a numerical gradient, "
+        "at least (edge_order + 1) elements are required.")
+ValueError: Shape of array too small to calculate a numerical gradient, at least (edge_order + 1) elements are required.

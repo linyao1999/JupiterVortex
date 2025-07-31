@@ -12,7 +12,7 @@
 source /etc/profile.d/modules.sh
 source activate dedalus3
 
-exp_dir="$HOME/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF"
+exp_dir="$HOME/fs06/GFD_Polar_vortex/ddloutput/debug"
 
 echo "Creating directory: $exp_dir"
 mkdir -p "$exp_dir"
@@ -29,3 +29,4 @@ cd "$exp_dir" || exit 1
 
 echo "Running job at $(date) on $(hostname)"
 mpirun -n 32 python3 ivp.py
+echo "finish job at $(date)"

@@ -12,7 +12,9 @@
 source /etc/profile.d/modules.sh
 source activate dedalus3
 
-exp_dir="$HOME/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi256_Nr128_dt1e-3_2var_explicit_highF"
+# JupiterVortex/EXP_nonlinearEQ_Nphi64_Nr64_2var_explicit_highF_noviscosity/ivp.py
+
+exp_dir="$HOME/fs06/GFD_Polar_vortex/ddloutput/EXP_nonlinearEQ_Nphi64_Nr64_2var_explicit_highF_noviscosity"
 
 echo "Creating directory: $exp_dir"
 mkdir -p "$exp_dir"
