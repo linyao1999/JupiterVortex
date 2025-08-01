@@ -1,0 +1,326 @@
+Running job at Fri Aug  1 00:12:37 EDT 2025 on c089
+Nphi=320, Nr=128, Re=1e10, Ld=1e7, U=100, stop_sim_time=20
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+2025-08-01 00:12:44,350 subsystems 0/32 INFO :: Building subproblem matrices 1/5 (~20%) Elapsed: 1s, Remaining: 2s, Rate: 2.0e+00/s
+2025-08-01 00:12:44,596 subsystems 0/32 INFO :: Building subproblem matrices 2/5 (~40%) Elapsed: 1s, Remaining: 1s, Rate: 2.7e+00/s
+2025-08-01 00:12:45,064 subsystems 0/32 INFO :: Building subproblem matrices 3/5 (~60%) Elapsed: 1s, Remaining: 1s, Rate: 2.5e+00/s
+2025-08-01 00:12:45,301 subsystems 0/32 INFO :: Building subproblem matrices 4/5 (~80%) Elapsed: 1s, Remaining: 0s, Rate: 2.8e+00/s
+2025-08-01 00:12:45,764 subsystems 0/32 INFO :: Building subproblem matrices 5/5 (~100%) Elapsed: 2s, Remaining: 0s, Rate: 2.6e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 517/517, cond: 3.9e+09
+MPI rank: 0, subproblem: 1, group: (159, None), matrix rank: 400/400, cond: 1.1e+09
+MPI rank: 0, subproblem: 2, group: (1, None), matrix rank: 1032/1032, cond: 3.9e+09
+MPI rank: 0, subproblem: 3, group: (158, None), matrix rank: 400/400, cond: 1.1e+09
+MPI rank: 0, subproblem: 4, group: (2, None), matrix rank: 1024/1024, cond: 3.9e+09
+2025-08-01 00:12:50,062 __main__ 0/32 INFO :: Starting main loop
+2025-08-01 00:12:53,260 __main__ 0/32 INFO :: Iteration=1, Time=1.000000e-05, dt=1.000000e-05, integ(KE)=1.350e-10
+2025-08-01 00:13:36,801 __main__ 0/32 INFO :: Iteration=1001, Time=9.057593e-01, dt=1.000000e-03, integ(KE)=5.104e-08
+2025-08-01 00:14:19,303 __main__ 0/32 INFO :: Iteration=2001, Time=1.905759e+00, dt=1.000000e-03, integ(KE)=5.207e-08
+2025-08-01 00:15:01,536 __main__ 0/32 INFO :: Iteration=3001, Time=2.905759e+00, dt=1.000000e-03, integ(KE)=5.370e-08
+2025-08-01 00:15:45,647 __main__ 0/32 INFO :: Iteration=4001, Time=3.905759e+00, dt=1.000000e-03, integ(KE)=5.790e-08
+2025-08-01 00:16:28,695 __main__ 0/32 INFO :: Iteration=5001, Time=4.905759e+00, dt=1.000000e-03, integ(KE)=6.267e-08
+2025-08-01 00:17:12,356 __main__ 0/32 INFO :: Iteration=6001, Time=5.905759e+00, dt=1.000000e-03, integ(KE)=6.943e-08
+2025-08-01 00:17:55,316 __main__ 0/32 INFO :: Iteration=7001, Time=6.905759e+00, dt=1.000000e-03, integ(KE)=7.537e-08
+2025-08-01 00:18:38,592 __main__ 0/32 INFO :: Iteration=8001, Time=7.905759e+00, dt=1.000000e-03, integ(KE)=8.082e-08
+2025-08-01 00:19:20,290 __main__ 0/32 INFO :: Iteration=9001, Time=8.905759e+00, dt=1.000000e-03, integ(KE)=8.472e-08
+2025-08-01 00:20:02,783 __main__ 0/32 INFO :: Iteration=10001, Time=9.905759e+00, dt=1.000000e-03, integ(KE)=8.862e-08
+2025-08-01 00:20:45,509 __main__ 0/32 INFO :: Iteration=11001, Time=1.090576e+01, dt=1.000000e-03, integ(KE)=9.135e-08
+2025-08-01 00:21:27,909 __main__ 0/32 INFO :: Iteration=12001, Time=1.190576e+01, dt=1.000000e-03, integ(KE)=9.423e-08
+2025-08-01 00:22:10,499 __main__ 0/32 INFO :: Iteration=13001, Time=1.290576e+01, dt=1.000000e-03, integ(KE)=9.619e-08
+2025-08-01 00:22:54,461 __main__ 0/32 INFO :: Iteration=14001, Time=1.390576e+01, dt=1.000000e-03, integ(KE)=9.662e-08
+2025-08-01 00:23:39,117 __main__ 0/32 INFO :: Iteration=15001, Time=1.490576e+01, dt=1.000000e-03, integ(KE)=9.494e-08
+2025-08-01 00:24:22,029 __main__ 0/32 INFO :: Iteration=16001, Time=1.590576e+01, dt=1.000000e-03, integ(KE)=9.115e-08
+2025-08-01 00:25:05,118 __main__ 0/32 INFO :: Iteration=17001, Time=1.690576e+01, dt=1.000000e-03, integ(KE)=8.664e-08
+2025-08-01 00:25:50,596 __main__ 0/32 INFO :: Iteration=18001, Time=1.790576e+01, dt=1.000000e-03, integ(KE)=8.081e-08
+2025-08-01 00:26:35,159 __main__ 0/32 INFO :: Iteration=19001, Time=1.890576e+01, dt=1.000000e-03, integ(KE)=7.565e-08
+2025-08-01 00:27:18,041 __main__ 0/32 INFO :: Iteration=20001, Time=1.990576e+01, dt=1.000000e-03, integ(KE)=7.035e-08
+2025-08-01 00:27:22,660 solvers 0/32 INFO :: Simulation stop time reached.
+2025-08-01 00:27:22,660 solvers 0/32 INFO :: Final iteration: 20096
+2025-08-01 00:27:22,660 solvers 0/32 INFO :: Final sim time: 20.000759267579586
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 4, subproblem: 0, group: (10, None), matrix rank: 992/992, cond: 3.9e+09
+MPI rank: 4, subproblem: 1, group: (149, None), matrix rank: 440/440, cond: 1.4e+09
+MPI rank: 4, subproblem: 2, group: (11, None), matrix rank: 992/992, cond: 3.9e+09
+MPI rank: 4, subproblem: 3, group: (148, None), matrix rank: 440/440, cond: 1.4e+09
+MPI rank: 4, subproblem: 4, group: (12, None), matrix rank: 984/984, cond: 3.9e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 7, subproblem: 0, group: (142, None), matrix rank: 464/464, cond: 1.5e+09
+MPI rank: 7, subproblem: 1, group: (18, None), matrix rank: 960/960, cond: 3.8e+09
+MPI rank: 7, subproblem: 2, group: (141, None), matrix rank: 472/472, cond: 1.6e+09
+MPI rank: 7, subproblem: 3, group: (19, None), matrix rank: 960/960, cond: 3.9e+09
+MPI rank: 7, subproblem: 4, group: (140, None), matrix rank: 472/472, cond: 1.6e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 9, subproblem: 0, group: (137, None), matrix rank: 488/488, cond: 1.7e+09
+MPI rank: 9, subproblem: 1, group: (23, None), matrix rank: 944/944, cond: 3.8e+09
+MPI rank: 9, subproblem: 2, group: (136, None), matrix rank: 488/488, cond: 1.7e+09
+MPI rank: 9, subproblem: 3, group: (24, None), matrix rank: 936/936, cond: 3.8e+09
+MPI rank: 9, subproblem: 4, group: (135, None), matrix rank: 496/496, cond: 1.7e+09
+2025-08-01 00:27:22,660 solvers 0/32 INFO :: Setup time (init - iter 0): 6.342 sec
+2025-08-01 00:27:22,661 solvers 0/32 INFO :: Warmup time (iter 0-10): 3.559 sec
+2025-08-01 00:27:22,661 solvers 0/32 INFO :: Run time (iter 10-end): 869 sec
+2025-08-01 00:27:22,661 solvers 0/32 INFO :: CPU time (iter 10-end): 7.725 cpu-hr
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 5, subproblem: 0, group: (147, None), matrix rank: 448/448, cond: 1.4e+09
+MPI rank: 5, subproblem: 1, group: (13, None), matrix rank: 984/984, cond: 3.9e+09
+MPI rank: 5, subproblem: 2, group: (146, None), matrix rank: 448/448, cond: 1.4e+09
+MPI rank: 5, subproblem: 3, group: (14, None), matrix rank: 976/976, cond: 3.9e+09
+MPI rank: 5, subproblem: 4, group: (145, None), matrix rank: 456/456, cond: 1.5e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 6, subproblem: 0, group: (15, None), matrix rank: 976/976, cond: 3.9e+09
+MPI rank: 6, subproblem: 1, group: (144, None), matrix rank: 456/456, cond: 1.5e+09
+MPI rank: 6, subproblem: 2, group: (16, None), matrix rank: 968/968, cond: 3.9e+09
+MPI rank: 6, subproblem: 3, group: (143, None), matrix rank: 464/464, cond: 1.5e+09
+MPI rank: 6, subproblem: 4, group: (17, None), matrix rank: 968/968, cond: 3.9e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 15, subproblem: 0, group: (122, None), matrix rank: 544/544, cond: 2.0e+09
+MPI rank: 15, subproblem: 1, group: (38, None), matrix rank: 880/880, cond: 3.7e+09
+MPI rank: 15, subproblem: 2, group: (121, None), matrix rank: 552/552, cond: 2.1e+09
+MPI rank: 15, subproblem: 3, group: (39, None), matrix rank: 880/880, cond: 3.7e+09
+MPI rank: 15, subproblem: 4, group: (120, None), matrix rank: 552/552, cond: 2.0e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 21, subproblem: 0, group: (107, None), matrix rank: 608/608, cond: 2.4e+09
+MPI rank: 21, subproblem: 1, group: (53, None), matrix rank: 824/824, cond: 3.5e+09
+MPI rank: 21, subproblem: 2, group: (106, None), matrix rank: 608/608, cond: 2.4e+09
+MPI rank: 21, subproblem: 3, group: (54, None), matrix rank: 816/816, cond: 3.4e+09
+MPI rank: 21, subproblem: 4, group: (105, None), matrix rank: 616/616, cond: 2.4e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 22, subproblem: 0, group: (55, None), matrix rank: 816/816, cond: 3.5e+09
+MPI rank: 22, subproblem: 1, group: (104, None), matrix rank: 616/616, cond: 2.4e+09
+MPI rank: 22, subproblem: 2, group: (56, None), matrix rank: 808/808, cond: 3.4e+09
+MPI rank: 22, subproblem: 3, group: (103, None), matrix rank: 624/624, cond: 2.5e+09
+MPI rank: 22, subproblem: 4, group: (57, None), matrix rank: 808/808, cond: 3.4e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 23, subproblem: 0, group: (102, None), matrix rank: 624/624, cond: 2.5e+09
+MPI rank: 23, subproblem: 1, group: (58, None), matrix rank: 800/800, cond: 3.4e+09
+MPI rank: 23, subproblem: 2, group: (101, None), matrix rank: 632/632, cond: 2.5e+09
+MPI rank: 23, subproblem: 3, group: (59, None), matrix rank: 800/800, cond: 3.4e+09
+MPI rank: 23, subproblem: 4, group: (100, None), matrix rank: 632/632, cond: 2.5e+09
+2025-08-01 00:27:22,661 solvers 0/32 INFO :: Speed: 3.295e+05 mode-stages/cpu-sec
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 12, subproblem: 0, group: (30, None), matrix rank: 912/912, cond: 3.8e+09
+MPI rank: 12, subproblem: 1, group: (129, None), matrix rank: 520/520, cond: 1.9e+09
+MPI rank: 12, subproblem: 2, group: (31, None), matrix rank: 912/912, cond: 3.8e+09
+MPI rank: 12, subproblem: 3, group: (128, None), matrix rank: 520/520, cond: 1.9e+09
+MPI rank: 12, subproblem: 4, group: (32, None), matrix rank: 904/904, cond: 3.7e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 13, subproblem: 0, group: (127, None), matrix rank: 528/528, cond: 1.9e+09
+MPI rank: 13, subproblem: 1, group: (33, None), matrix rank: 904/904, cond: 3.8e+09
+MPI rank: 13, subproblem: 2, group: (126, None), matrix rank: 528/528, cond: 1.9e+09
+MPI rank: 13, subproblem: 3, group: (34, None), matrix rank: 896/896, cond: 3.7e+09
+MPI rank: 13, subproblem: 4, group: (125, None), matrix rank: 536/536, cond: 2.0e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 14, subproblem: 0, group: (35, None), matrix rank: 896/896, cond: 3.7e+09
+MPI rank: 14, subproblem: 1, group: (124, None), matrix rank: 536/536, cond: 1.9e+09
+MPI rank: 14, subproblem: 2, group: (36, None), matrix rank: 888/888, cond: 3.7e+09
+MPI rank: 14, subproblem: 3, group: (123, None), matrix rank: 544/544, cond: 2.0e+09
+MPI rank: 14, subproblem: 4, group: (37, None), matrix rank: 888/888, cond: 3.7e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 17, subproblem: 0, group: (117, None), matrix rank: 568/568, cond: 2.2e+09
+MPI rank: 17, subproblem: 1, group: (43, None), matrix rank: 864/864, cond: 3.6e+09
+MPI rank: 17, subproblem: 2, group: (116, None), matrix rank: 568/568, cond: 2.1e+09
+MPI rank: 17, subproblem: 3, group: (44, None), matrix rank: 856/856, cond: 3.6e+09
+MPI rank: 17, subproblem: 4, group: (115, None), matrix rank: 576/576, cond: 2.2e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 27, subproblem: 0, group: (92, None), matrix rank: 664/664, cond: 2.7e+09
+MPI rank: 27, subproblem: 1, group: (68, None), matrix rank: 760/760, cond: 3.2e+09
+MPI rank: 27, subproblem: 2, group: (91, None), matrix rank: 672/672, cond: 2.8e+09
+MPI rank: 27, subproblem: 3, group: (69, None), matrix rank: 760/760, cond: 3.2e+09
+MPI rank: 27, subproblem: 4, group: (90, None), matrix rank: 672/672, cond: 2.8e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 31, subproblem: 0, group: (82, None), matrix rank: 704/704, cond: 2.9e+09
+MPI rank: 31, subproblem: 1, group: (78, None), matrix rank: 720/720, cond: 3.0e+09
+MPI rank: 31, subproblem: 2, group: (81, None), matrix rank: 712/712, cond: 3.0e+09
+MPI rank: 31, subproblem: 3, group: (79, None), matrix rank: 720/720, cond: 3.0e+09
+MPI rank: 31, subproblem: 4, group: (80, None), matrix rank: 712/712, cond: 3.0e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 10, subproblem: 0, group: (25, None), matrix rank: 936/936, cond: 3.8e+09
+MPI rank: 10, subproblem: 1, group: (134, None), matrix rank: 496/496, cond: 1.7e+09
+MPI rank: 10, subproblem: 2, group: (26, None), matrix rank: 928/928, cond: 3.8e+09
+MPI rank: 10, subproblem: 3, group: (133, None), matrix rank: 504/504, cond: 1.8e+09
+MPI rank: 10, subproblem: 4, group: (27, None), matrix rank: 928/928, cond: 3.8e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 2, subproblem: 0, group: (5, None), matrix rank: 1016/1016, cond: 3.9e+09
+MPI rank: 2, subproblem: 1, group: (154, None), matrix rank: 416/416, cond: 1.2e+09
+MPI rank: 2, subproblem: 2, group: (6, None), matrix rank: 1008/1008, cond: 3.9e+09
+MPI rank: 2, subproblem: 3, group: (153, None), matrix rank: 424/424, cond: 1.3e+09
+MPI rank: 2, subproblem: 4, group: (7, None), matrix rank: 1008/1008, cond: 3.9e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 3, subproblem: 0, group: (152, None), matrix rank: 424/424, cond: 1.3e+09
+MPI rank: 3, subproblem: 1, group: (8, None), matrix rank: 1000/1000, cond: 3.9e+09
+MPI rank: 3, subproblem: 2, group: (151, None), matrix rank: 432/432, cond: 1.3e+09
+MPI rank: 3, subproblem: 3, group: (9, None), matrix rank: 1000/1000, cond: 3.9e+09
+MPI rank: 3, subproblem: 4, group: (150, None), matrix rank: 432/432, cond: 1.3e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 24, subproblem: 0, group: (60, None), matrix rank: 792/792, cond: 3.4e+09
+MPI rank: 24, subproblem: 1, group: (99, None), matrix rank: 640/640, cond: 2.6e+09
+MPI rank: 24, subproblem: 2, group: (61, None), matrix rank: 792/792, cond: 3.4e+09
+MPI rank: 24, subproblem: 3, group: (98, None), matrix rank: 640/640, cond: 2.6e+09
+MPI rank: 24, subproblem: 4, group: (62, None), matrix rank: 784/784, cond: 3.3e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 1, subproblem: 0, group: (157, None), matrix rank: 408/408, cond: 1.2e+09
+MPI rank: 1, subproblem: 1, group: (3, None), matrix rank: 1024/1024, cond: 3.9e+09
+MPI rank: 1, subproblem: 2, group: (156, None), matrix rank: 408/408, cond: 1.2e+09
+MPI rank: 1, subproblem: 3, group: (4, None), matrix rank: 1016/1016, cond: 3.9e+09
+MPI rank: 1, subproblem: 4, group: (155, None), matrix rank: 416/416, cond: 1.2e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 8, subproblem: 0, group: (20, None), matrix rank: 952/952, cond: 3.8e+09
+MPI rank: 8, subproblem: 1, group: (139, None), matrix rank: 480/480, cond: 1.6e+09
+MPI rank: 8, subproblem: 2, group: (21, None), matrix rank: 952/952, cond: 3.9e+09
+MPI rank: 8, subproblem: 3, group: (138, None), matrix rank: 480/480, cond: 1.6e+09
+MPI rank: 8, subproblem: 4, group: (22, None), matrix rank: 944/944, cond: 3.8e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 26, subproblem: 0, group: (65, None), matrix rank: 776/776, cond: 3.3e+09
+MPI rank: 26, subproblem: 1, group: (94, None), matrix rank: 656/656, cond: 2.7e+09
+MPI rank: 26, subproblem: 2, group: (66, None), matrix rank: 768/768, cond: 3.2e+09
+MPI rank: 26, subproblem: 3, group: (93, None), matrix rank: 664/664, cond: 2.7e+09
+MPI rank: 26, subproblem: 4, group: (67, None), matrix rank: 768/768, cond: 3.3e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 29, subproblem: 0, group: (87, None), matrix rank: 688/688, cond: 2.9e+09
+MPI rank: 29, subproblem: 1, group: (73, None), matrix rank: 744/744, cond: 3.1e+09
+MPI rank: 29, subproblem: 2, group: (86, None), matrix rank: 688/688, cond: 2.8e+09
+MPI rank: 29, subproblem: 3, group: (74, None), matrix rank: 736/736, cond: 3.1e+09
+MPI rank: 29, subproblem: 4, group: (85, None), matrix rank: 696/696, cond: 2.9e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 19, subproblem: 0, group: (112, None), matrix rank: 584/584, cond: 2.2e+09
+MPI rank: 19, subproblem: 1, group: (48, None), matrix rank: 840/840, cond: 3.5e+09
+MPI rank: 19, subproblem: 2, group: (111, None), matrix rank: 592/592, cond: 2.3e+09
+MPI rank: 19, subproblem: 3, group: (49, None), matrix rank: 840/840, cond: 3.6e+09
+MPI rank: 19, subproblem: 4, group: (110, None), matrix rank: 592/592, cond: 2.3e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 25, subproblem: 0, group: (97, None), matrix rank: 648/648, cond: 2.6e+09
+MPI rank: 25, subproblem: 1, group: (63, None), matrix rank: 784/784, cond: 3.3e+09
+MPI rank: 25, subproblem: 2, group: (96, None), matrix rank: 648/648, cond: 2.6e+09
+MPI rank: 25, subproblem: 3, group: (64, None), matrix rank: 776/776, cond: 3.3e+09
+MPI rank: 25, subproblem: 4, group: (95, None), matrix rank: 656/656, cond: 2.7e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 28, subproblem: 0, group: (70, None), matrix rank: 752/752, cond: 3.2e+09
+MPI rank: 28, subproblem: 1, group: (89, None), matrix rank: 680/680, cond: 2.8e+09
+MPI rank: 28, subproblem: 2, group: (71, None), matrix rank: 752/752, cond: 3.2e+09
+MPI rank: 28, subproblem: 3, group: (88, None), matrix rank: 680/680, cond: 2.8e+09
+MPI rank: 28, subproblem: 4, group: (72, None), matrix rank: 744/744, cond: 3.1e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 16, subproblem: 0, group: (40, None), matrix rank: 872/872, cond: 3.6e+09
+MPI rank: 16, subproblem: 1, group: (119, None), matrix rank: 560/560, cond: 2.1e+09
+MPI rank: 16, subproblem: 2, group: (41, None), matrix rank: 872/872, cond: 3.7e+09
+MPI rank: 16, subproblem: 3, group: (118, None), matrix rank: 560/560, cond: 2.1e+09
+MPI rank: 16, subproblem: 4, group: (42, None), matrix rank: 864/864, cond: 3.6e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 20, subproblem: 0, group: (50, None), matrix rank: 832/832, cond: 3.5e+09
+MPI rank: 20, subproblem: 1, group: (109, None), matrix rank: 600/600, cond: 2.3e+09
+MPI rank: 20, subproblem: 2, group: (51, None), matrix rank: 832/832, cond: 3.5e+09
+MPI rank: 20, subproblem: 3, group: (108, None), matrix rank: 600/600, cond: 2.3e+09
+MPI rank: 20, subproblem: 4, group: (52, None), matrix rank: 824/824, cond: 3.5e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 18, subproblem: 0, group: (45, None), matrix rank: 856/856, cond: 3.6e+09
+MPI rank: 18, subproblem: 1, group: (114, None), matrix rank: 576/576, cond: 2.2e+09
+MPI rank: 18, subproblem: 2, group: (46, None), matrix rank: 848/848, cond: 3.6e+09
+MPI rank: 18, subproblem: 3, group: (113, None), matrix rank: 584/584, cond: 2.2e+09
+MPI rank: 18, subproblem: 4, group: (47, None), matrix rank: 848/848, cond: 3.6e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 30, subproblem: 0, group: (75, None), matrix rank: 736/736, cond: 3.1e+09
+MPI rank: 30, subproblem: 1, group: (84, None), matrix rank: 696/696, cond: 2.9e+09
+MPI rank: 30, subproblem: 2, group: (76, None), matrix rank: 728/728, cond: 3.1e+09
+MPI rank: 30, subproblem: 3, group: (83, None), matrix rank: 704/704, cond: 2.9e+09
+MPI rank: 30, subproblem: 4, group: (77, None), matrix rank: 728/728, cond: 3.1e+09
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+MPI rank: 11, subproblem: 0, group: (132, None), matrix rank: 504/504, cond: 1.8e+09
+MPI rank: 11, subproblem: 1, group: (28, None), matrix rank: 920/920, cond: 3.8e+09
+MPI rank: 11, subproblem: 2, group: (131, None), matrix rank: 512/512, cond: 1.8e+09
+MPI rank: 11, subproblem: 3, group: (29, None), matrix rank: 920/920, cond: 3.8e+09
+MPI rank: 11, subproblem: 4, group: (130, None), matrix rank: 512/512, cond: 1.8e+09
+Finished job at Fri Aug  1 00:27:23 EDT 2025

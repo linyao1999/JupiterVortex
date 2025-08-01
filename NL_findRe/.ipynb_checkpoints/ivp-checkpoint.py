@@ -31,10 +31,10 @@ Nphi = int(os.environ.get("Nphi"))
 Nr = int(os.environ.get("Nr"))
 Re = float(os.environ.get("Re"))
 timestepper = "RK443"
-timestep = 1e-3
+timestep = 1e-5
 initial_timestep = timestep
-max_timestep = 1e-2
-stop_sim_time = 100
+max_timestep = 1e-3
+stop_sim_time = float(os.environ.get("stop_sim_time"))
 dtype = np.float64
 initv = 1e-3
 dealias = 3/2
@@ -63,8 +63,6 @@ tau_bc = dist.Field(name='tau_bc')  # force the integ(psi1 - psi2) = 0; internal
 psi2u = lambda A: d3.Skew(d3.Gradient(A))
 lift_basis = disk
 lift = lambda A,n: d3.Lift(A, lift_basis, n)
-# q1 = d3.lap(psi1) - F * (psi1 - psi2)
-# q2 = d3.lap(psi2) + F * (psi1 - psi2)
 u1 = psi2u(psi1)
 u2 = psi2u(psi2)
 
@@ -103,10 +101,10 @@ if not restart:
     psi2.fill_random('g', seed=42, distribution='normal', scale=1e-3)
     q1.fill_random('g', seed=42, distribution='normal', scale=1e-3)
     q2.fill_random('g', seed=42, distribution='normal', scale=1e-3)
-    psi1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
-    psi2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
-    q1.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
-    q2.low_pass_filter(scales=0.25) # Keep only lower fourth of the modes
+    psi1.low_pass_filter(scales=0.1) # Keep only the lower modes
+    psi2.low_pass_filter(scales=0.1) 
+    q1.low_pass_filter(scales=0.1)
+    q2.low_pass_filter(scales=0.1) 
     # m, n = dist.coeff_layout.local_group_arrays(psi1.domain, scales=1)
     # psi1['c'] *= (m == 5)
     # psi2['c'] *= (m == 5)
@@ -114,16 +112,37 @@ if not restart:
     psi2['g'] *= initv
     file_handler_mode = 'overwrite'
 else:
-    write, initial_timestep = solver.load_state('snapshots/snapshots_s2.h5')
+    import glob
+    import re
+    checkpoint_path = 'checkpoints'
+    checkpoint_prefix = os.path.join(checkpoint_path, 'checkpoints')
+
+    def get_num(filename):
+        match = re.search(r'_s(\d+)\.h5$', filename)
+        return int(match.group(1)) if match else -1
+    
+    checkpoint_file = sorted(glob.glob(f"{checkpoint_prefix}_s*.h5"), key=get_num)[0]
+    print('checkpoint file is: ', checkpoint_file)
+    write, initial_timestep = solver.load_state(checkpoint_file)
     file_handler_mode = 'append'
 
-# Analysis , sim_dt=1
-# snapshots = solver.evaluator.add_file_handler('snapshots', iter=100, max_writes=10)
-snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=1, max_writes=1, mode=file_handler_mode)
-snapshots.add_tasks(solver.state, scales=(1,1))
+# Analysis
+snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=0.1, max_writes=100, mode=file_handler_mode)
+snapshots.add_task(psi1, name='psi1', scales=(1,1))
+snapshots.add_task(psi2, name='psi2', scales=(1,1))
+snapshots.add_task(q1, name='q1', scales=(1,1))
+snapshots.add_task(q2, name='q2', scales=(1,1))
+snapshots.add_task(psi1, name='psi1_coef', layout='c', scales=(1,1))
+snapshots.add_task(psi2, name='psi2_coef', layout='c', scales=(1,1))
+snapshots.add_task(q1, name='q1_coef', layout='c', scales=(1,1))
+snapshots.add_task(q2, name='q2_coef', layout='c', scales=(1,1))
 
-# snapshots = solver.evaluator.add_file_handler('scalars', sim_dt=0.01, max_writes=10000, mode=file_handler_mode)
-# snapshots.add_tasks(d3.Integrate(u1@u1 + u2@u2), scales=(1,1))
+scalars = solver.evaluator.add_file_handler('scalars', sim_dt=0.1, max_writes=1000, mode=file_handler_mode)
+snapshots.add_task(d3.Integrate(u1@u1 + u2@u2), name='KE') 
+
+checkpoints = solver.evaluator.add_file_handler(checkpoint_path, sim_dt=1, max_writes=1, mode=file_handler_mode)
+checkpoints.add_tasks(solver.state, scales=(1,1))
+
 
 # CFL
 # print('line 124')

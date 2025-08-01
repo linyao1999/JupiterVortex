@@ -1,0 +1,19 @@
+Running job at Fri Aug  1 00:12:37 EDT 2025 on c089
+Nphi=320, Nr=128, Re=1e10, Ld=1e7, U=100, stop_sim_time=20
+Ld    = 10000000.0
+U     = 100.0
+gamma = 0.7198176581830783
+R     = 3.495
+2025-08-01 00:12:44,350 subsystems 0/32 INFO :: Building subproblem matrices 1/5 (~20%) Elapsed: 1s, Remaining: 2s, Rate: 2.0e+00/s
+2025-08-01 00:12:44,596 subsystems 0/32 INFO :: Building subproblem matrices 2/5 (~40%) Elapsed: 1s, Remaining: 1s, Rate: 2.7e+00/s
+2025-08-01 00:12:45,064 subsystems 0/32 INFO :: Building subproblem matrices 3/5 (~60%) Elapsed: 1s, Remaining: 1s, Rate: 2.5e+00/s
+2025-08-01 00:12:45,301 subsystems 0/32 INFO :: Building subproblem matrices 4/5 (~80%) Elapsed: 1s, Remaining: 0s, Rate: 2.8e+00/s
+2025-08-01 00:12:45,764 subsystems 0/32 INFO :: Building subproblem matrices 5/5 (~100%) Elapsed: 2s, Remaining: 0s, Rate: 2.6e+00/s
+MPI rank: 0, subproblem: 0, group: (0, None), matrix rank: 517/517, cond: 3.9e+09
+MPI rank: 0, subproblem: 1, group: (159, None), matrix rank: 400/400, cond: 1.1e+09
+MPI rank: 0, subproblem: 2, group: (1, None), matrix rank: 1032/1032, cond: 3.9e+09
+MPI rank: 0, subproblem: 3, group: (158, None), matrix rank: 400/400, cond: 1.1e+09
+MPI rank: 0, subproblem: 4, group: (2, None), matrix rank: 1024/1024, cond: 3.9e+09
+2025-08-01 00:12:50,062 __main__ 0/32 INFO :: Starting main loop
+2025-08-01 00:12:53,260 __main__ 0/32 INFO :: Iteration=1, Time=1.000000e-05, dt=1.000000e-05, integ(KE)=1.350e-10
+2025-08-01 00:13:36,801 __main__ 0/32 INFO :: Iteration=1001, Time=9.057593e-01, dt=1.000000e-03, integ(KE)=5.104e-08

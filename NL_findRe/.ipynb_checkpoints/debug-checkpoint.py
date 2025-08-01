@@ -118,12 +118,17 @@ else:
     file_handler_mode = 'append'
 
 # Analysis , sim_dt=1
-# snapshots = solver.evaluator.add_file_handler('snapshots', iter=100, max_writes=10)
-snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=1, max_writes=1, mode=file_handler_mode)
-snapshots.add_tasks(solver.state, scales=(1,1))
 
-scalars = solver.evaluator.add_file_handler('scalars', sim_dt=0.01)
-scalars.add_tasks(d3.Average(u1@u1 + u2@u2), name='KE')
+snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=0.1, max_writes=1, mode=file_handler_mode)
+snapshots.add_task(psi1, name='psi1', layout='c', scales=(1,1))
+snapshots.add_task(psi2, name='psi2', scales=(1,1))
+
+# snapshots = solver.evaluator.add_file_handler('snapshots', sim_dt=1, max_writes=1, mode=file_handler_mode)
+# snapshots.add_tasks(solver.state, scales=(1,1))
+
+
+# scalars = solver.evaluator.add_file_handler('scalars', sim_dt=0.01)
+# scalars.add_tasks(d3.Average(u1@u1 + u2@u2), name='KE')
 
 # CFL
 # print('line 124')
@@ -133,12 +138,13 @@ U1_cfl['g'] = U1['g']
 CFL = d3.CFL(solver, initial_dt=initial_timestep, cadence=10, safety=0.2, threshold=0.1,
              max_change=1.5, min_change=0.5, max_dt=max_timestep)
 CFL.add_velocity(u1+U1_cfl)
+# CFL.add_velocity(u1+U1_cfl)
 # CFL.add_velocity(u1)
 
 # Flow properties
 flow = d3.GlobalFlowProperty(solver, cadence=100)
-flow.add_property(d3.Integrate(u1@u1 + u2@u2), layout='g', name='KE')
-# flow.add_property(u1@u1 + u2@u2, name='KE')
+# flow.add_property(d3.Integrate(u1@u1 + u2@u2), layout='g', name='KE')
+flow.add_property(d3.Integrate(u1@u1 + u2@u2), name='KE')
 
 # Main loop
 try:

@@ -9,20 +9,23 @@ logger = logging.getLogger(__name__)
 restart = False 
 
 # Parameters
-# Physical parameters
+# -------- Choosen parameters ---------
+Ld = float(os.environ.get("Ld")) # deformation varying from 350 km to 1300 km based on obs
+U = float(os.environ.get("U"))  # 80m/s in Siegelman et al. 2018
+# -------- fixed parameters -----------
 a = 6.99e7 # radius (m)
 P = 9.925 * 3600 # rotation period (s)
+delta = 1  # H1/H2
+# -------- derived parameters -----------
 R_dim = a / 2
-gamma_dim = 2 * (2 * np.pi / P) / a**2
-# Dimensionless parameters
-L = 1e7 # m
-U = 100 # m/s
-T = L / U # s
-# F = 51.8 # = L**2 / Ld**2
-F = float(os.environ.get("F"))
-gamma = gamma_dim * L**2 * T
-R = R_dim / L
+gamma_dim = 4 * np.pi / P / (a**2)
 
+# Dimensionless parameters
+R = R_dim / Ld
+gamma = gamma_dim * Ld**3 / U
+
+print(f"Ld    = {Ld}")
+print(f"U     = {U}")
 print(f"gamma = {gamma}")
 print(f"R     = {R}")
 
@@ -69,18 +72,18 @@ u2 = psi2u(psi2)
 # Background
 r_sq = dist.Field(bases=disk.radial_basis)
 r_sq['g'] = r**2  # radial coordinate
-Psi1 = r_sq / 2
-Psi2 = - r_sq / 2
-Q1 = d3.lap(Psi1) - F * (Psi1 - Psi2) - 0.5 * gamma * r_sq
-Q2 = d3.lap(Psi2) + F * (Psi1 - Psi2) - 0.5 * gamma * r_sq
+Psi1 = r_sq / 2 / R
+Psi2 = - r_sq / 2 / R
+Q1 = d3.lap(Psi1) - (Psi1 - Psi2) - 0.5 * gamma * r_sq
+Q2 = d3.lap(Psi2) + delta * (Psi1 - Psi2) - 0.5 * gamma * r_sq
 U1 = psi2u(Psi1)
 U2 = psi2u(Psi2)
 
 # Problem
 problem = d3.IVP([psi1, psi2, q1, q2, tau_q1, tau_q2, tau_q3, tau_q4, tau_bc], namespace=locals())
 
-problem.add_equation("q1 - (lap(psi1) - F * (psi1 - psi2)) + lift(tau_q1,-1)= 0")
-problem.add_equation("q2 - (lap(psi2) + F * (psi1 - psi2)) + lift(tau_q2,-1)= 0")
+problem.add_equation("q1 - (lap(psi1) - (psi1 - psi2)) + lift(tau_q1,-1)= 0")
+problem.add_equation("q2 - (lap(psi2) + delta * (psi1 - psi2)) + lift(tau_q2,-1)= 0")
 problem.add_equation("dt(q1) - nu*lap(q1) + u1@grad(Q1) + lift(tau_q3,-1) = -(U1@grad(q1) + u1@grad(q1))")
 problem.add_equation("dt(q2) - nu*lap(q2) + u2@grad(Q2) + lift(tau_q4,-1) = -(U2@grad(q2) + u2@grad(q2))")
 
@@ -138,36 +141,36 @@ snapshots.add_task(q1, name='q1_coef', layout='c', scales=(1,1))
 snapshots.add_task(q2, name='q2_coef', layout='c', scales=(1,1))
 
 scalars = solver.evaluator.add_file_handler('scalars', sim_dt=0.1, max_writes=1000, mode=file_handler_mode)
-snapshots.add_task(d3.Integrate(u1@u1 + u2@u2), name='KE') 
-snapshots.add_task(d3.Integrate((psi1-psi2)**2 * F / 4 / (L**2)), name='APE') 
+scalars.add_task(d3.Integrate(u1@u1 + u2@u2)*(U**2), name='KE') 
+scalars.add_task(d3.Integrate((psi1-psi2)**2 * (U**2) / 4), name='APE') 
 
-checkpoints = solver.evaluator.add_file_handler(checkpoint_path, sim_dt=1, max_writes=1, mode=file_handler_mode)
+checkpoints = solver.evaluator.add_file_handler('checkpoints', sim_dt=1, max_writes=1, mode=file_handler_mode)
 checkpoints.add_tasks(solver.state, scales=(1,1))
 
-
 # CFL
-# print('line 124')
-# print(initial_timestep)
-# CFL = d3.CFL(solver, initial_dt=initial_timestep, cadence=10, safety=0.2, threshold=0.1,
-#              max_change=1.5, min_change=0.5, max_dt=max_timestep)
-# CFL.add_velocity(U1)
-# CFL.add_velocity(U2)
+U1_cfl = u1.evaluate().copy()
+U1_cfl['g'] = U1['g']
+U2_cfl = u2.evaluate().copy()
+U2_cfl['g'] = U2['g']
+CFL = d3.CFL(solver, initial_dt=initial_timestep, cadence=10, safety=0.2, threshold=0.1,
+             max_change=1.5, min_change=0.5, max_dt=max_timestep)
+CFL.add_velocity(u1+U1_cfl)
+CFL.add_velocity(u2+U2_cfl)
 
 # Flow properties
 flow = d3.GlobalFlowProperty(solver, cadence=100)
 flow.add_property(d3.Integrate(u1@u1 + u2@u2), name='KE')
-# flow.add_property(u1@u1 + u2@u2, name='KE')
 
 # Main loop
 try:
     logger.info('Starting main loop')
     while solver.proceed:
-        # timestep = CFL.compute_timestep()
+        timestep = CFL.compute_timestep()
         # print(timestep)
         solver.step(timestep)
         # psi1['c'] *= (m == 5)
         # psi2['c'] *= (m == 5)
-        if (solver.iteration-1) % 100 == 0:
+        if (solver.iteration-1) % 1000 == 0:
             max_KE = flow.max('KE')
             logger.info('Iteration=%i, Time=%e, dt=%e, integ(KE)=%.3e' %(solver.iteration, solver.sim_time, timestep, max_KE))
         # if (solver.iteration-1) % 100 == 0:
